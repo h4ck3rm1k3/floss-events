@@ -1,0 +1,35 @@
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Protege-2000 Class Hierarchy </title>
+</head>
+<body>
+<center><h1> Class Hierarchy for <i>planner-rdf</i> Project </h1></center><hr>
+<ul>
+<li>
+<A HREF="planner%253AThing.html">planner:Thing</A>
+</li>
+<ul>
+<li>
+<A HREF="planner%253ALink.html">planner:Link</A>
+</li>
+<li>
+<A HREF="planner%253ANote.html">planner:Note</A>
+</li>
+<li>
+<A HREF="planner%253APage.html">planner:Page</A>
+</li>
+<li>
+<A HREF="planner%253APageType.html">planner:PageType</A>
+</li>
+<ul><i>
+Instances : 
+<A HREF="day-page.html">day-page</A>, <A HREF="other-page.html">other-page</A>, <A HREF="topic-page.html">topic-page</A></i></ul>
+<li>
+<A HREF="planner%253ATag.html">planner:Tag</A>
+</li>
+<li>
+<A HREF="planner%253ATask.html">planner:Task</A>
+</li>
+</ul>
+</ul>
+<hr>Generated on Mon Nov 22 13:38:53 CET 2004</body></html>

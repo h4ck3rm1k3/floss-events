@@ -1,0 +1,1871 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:q="http://qdos.com/schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <rdf:Description rdf:about="http://qdos.com/schema#serviceProperty">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#metaphone">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#metaphone">
+    <rdfs:label>Double Metaphone</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#metaphone">
+    <rdfs:comment>This property is the generation of Double Metaphones on a name field</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#openid">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#openid">
+    <rdfs:subPropertyOf rdf:resource="http://qdos.com/schema#serviceProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#openid">
+    <q:serviceHomepage rdf:resource="http://openid.net/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#openid">
+    <q:module rdf:resource="file:modules/generic.pm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#openid">
+    <q:verification rdf:resource="http://qdos.com/schema#openID"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#openid">
+    <q:canonicalUriPattern>@URI@</q:canonicalUriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#openid">
+    <q:uriPattern>@URI@</q:uriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#livejournal">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#livejournal">
+    <rdfs:subPropertyOf rdf:resource="http://qdos.com/schema#serviceProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#livejournal">
+    <q:serviceName>Live Journal</q:serviceName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#livejournal">
+    <q:serviceHomepage rdf:resource="http://livejournal.com/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#livejournal">
+    <q:canonicalUriPattern>http://@USER@.livejournal.com/</q:canonicalUriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#livejournal">
+    <q:uriPattern>http://@USER@\.livejournal\.com/</q:uriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#livejournal">
+    <q:module rdf:resource="file:modules/lj.pm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#livejournal">
+    <q:verification rdf:resource="http://qdos.com/schema#openID"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#livejournal">
+    <q:icon rdf:resource="http://qdos.com/images/icons/links_livejournal.png"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#livejournal">
+    <q:hint>Enter your LiveJournal username below, for instance ‘fnivramd’.</q:hint>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#myspace">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#myspace">
+    <rdfs:subPropertyOf rdf:resource="http://qdos.com/schema#serviceProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#myspace">
+    <q:serviceName>MySpace</q:serviceName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#myspace">
+    <q:serviceHomepage rdf:resource="http://www.myspace.com/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#myspace">
+    <q:canonicalUriPattern>http://www.myspace.com/@USER@</q:canonicalUriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#myspace">
+    <q:uriPattern>http://(?:www\.)?myspace\.com/@USER@</q:uriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#myspace">
+    <q:uriPattern>http://profile\.myspace\.com/@USER@</q:uriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#myspace">
+    <q:uriPattern>http://profile\.myspace\.com/index\.cfm\?fuseaction=user\.viewprofile&amp;friendid=@USER@</q:uriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#myspace">
+    <q:module rdf:resource="file:modules/myspace.pm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#myspace">
+    <q:missingPattern>Invalid Friend ID.&lt;br&gt;This user has either cancelled</q:missingPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#myspace">
+    <q:icon rdf:resource="http://qdos.com/images/icons/links_myspace.png"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#myspace">
+    <q:hint>Enter your MySpace username below, for instance ‘janisonfire’.</q:hint>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#blogspot">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#blogspot">
+    <rdfs:subPropertyOf rdf:resource="http://qdos.com/schema#serviceProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#blogspot">
+    <q:serviceName>Blogger</q:serviceName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#blogspot">
+    <q:serviceHomepage rdf:resource="http://www.blogger.com/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#blogspot">
+    <q:canonicalUriPattern>http://@USER@.blogspot.com/</q:canonicalUriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#blogspot">
+    <q:uriPattern>http://@USER@\.blogspot\.com/</q:uriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#blogspot">
+    <q:module rdf:resource="file:modules/generic.pm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#blogspot">
+    <q:icon rdf:resource="http://qdos.com/images/icons/links_blogspot.png"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#blogspot">
+    <q:hint>Enter your Blogger.com account URL below, for instance ‘http://sonredfen.blogspot.com’.</q:hint>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#ebay">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#ebay">
+    <rdfs:subPropertyOf rdf:resource="http://qdos.com/schema#serviceProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#ebay">
+    <q:serviceName>eBay UK</q:serviceName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#ebay">
+    <q:serviceHomepage rdf:resource="http://www.ebay.co.uk/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#ebay">
+    <q:canonicalUriPattern>http://myworld.ebay.co.uk/@USER@</q:canonicalUriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#ebay">
+    <q:uriPattern>http://myworld\.ebay\.co\.uk/@USER@</q:uriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#ebay">
+    <q:module rdf:resource="file:modules/ebay.pm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#ebay">
+    <q:missingPattern>&lt;b&gt;The User ID you entered was not found. Please check</q:missingPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#ebay">
+    <q:icon rdf:resource="http://qdos.com/images/icons/links_ebay.png"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#ebay">
+    <q:hint>Enter your eBay username below, for instance ‘ebayno’.</q:hint>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#reddit">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#reddit">
+    <rdfs:subPropertyOf rdf:resource="http://qdos.com/schema#serviceProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#reddit">
+    <q:serviceName>Reddit</q:serviceName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#reddit">
+    <q:serviceHomepage rdf:resource="http://reddit.com/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#reddit">
+    <q:canonicalUriPattern>http://reddit.com/user/@USER@/</q:canonicalUriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#reddit">
+    <q:uriPattern>http://reddit\.com/user/@USER@/</q:uriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#reddit">
+    <q:module rdf:resource="file:modules/reddit.pm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#reddit">
+    <q:missingPattern>&lt;b&gt;The user page you entered was not found. Please check</q:missingPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#reddit">
+    <q:icon rdf:resource="http://qdos.com/images/icons/links_reddit.png"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#reddit">
+    <q:hint>Enter your Reddit username below, for instance ‘noserdin’.</q:hint>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#ringo">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#ringo">
+    <rdfs:subPropertyOf rdf:resource="http://qdos.com/schema#serviceProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#ringo">
+    <q:serviceName>Ringo</q:serviceName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#ringo">
+    <q:serviceHomepage>http://www.ringo.com/</q:serviceHomepage>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#ringo">
+    <q:module rdf:resource="file:modules/ringo.pm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#ringo">
+    <q:canonicalUriPattern>http://www.ringo.com/profile/@USER@.html</q:canonicalUriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#ringo">
+    <q:uriPattern>http://www\.ringo\.com/profile/@USER@\.html</q:uriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#ringo">
+    <q:missingPattern>&lt;b&gt;Incorrect Ringo pattern&lt;/b&gt;</q:missingPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#ringo">
+    <q:icon rdf:resource="http://qdos.com/images/icons/links_generic.png"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#linkedin">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#linkedin">
+    <rdfs:subPropertyOf rdf:resource="http://qdos.com/schema#serviceProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#linkedin">
+    <q:serviceName>LinkedIn</q:serviceName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#linkedin">
+    <q:serviceHomepage rdf:resource="http://www.linkedin.com/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#linkedin">
+    <q:canonicalUriPattern>http://www.linkedin.com/in/@USER@</q:canonicalUriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#linkedin">
+    <q:uriPattern>http://.*\.linkedin\.com/in/@USER@</q:uriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#linkedin">
+    <q:uriPattern>http://.*\.linkedin\.com/pub/(.*)</q:uriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#linkedin">
+    <q:module rdf:resource="file:modules/linkedin.pm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#linkedin">
+    <q:missingPattern>&lt;h1&gt;Profile Not Found&lt;/h1&gt;</q:missingPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#linkedin">
+    <q:icon rdf:resource="http://qdos.com/images/icons/links_linkedin.png"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#linkedin">
+    <q:hint>Enter your LinkedIn public profile URL below, for instance ‘http://www.linkedin.com/in/odinersn’.</q:hint>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#flickr">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#flickr">
+    <rdfs:subPropertyOf rdf:resource="http://qdos.com/schema#serviceProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#flickr">
+    <q:serviceName>Flickr</q:serviceName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#flickr">
+    <q:serviceHomepage rdf:resource="http://www.flickr.com/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#flickr">
+    <q:canonicalUriPattern>http://www.flickr.com/photos/@USER@</q:canonicalUriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#flickr">
+    <q:uriPattern>http://(?:www\.)?flickr\.com/photos/@USER@/?</q:uriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#flickr">
+    <q:missingPattern>&lt;h1&gt;Page Not Found&lt;/h1&gt;</q:missingPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#flickr">
+    <q:module rdf:resource="file:modules/flickr.pm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#flickr">
+    <q:icon rdf:resource="http://qdos.com/images/icons/links_flickr.png"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#flickr">
+    <q:hint>Enter your Flickr photos URL below, for instance ‘http://www.flickr.com/photos/12596767@N03’.</q:hint>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#digg">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#digg">
+    <rdfs:subPropertyOf rdf:resource="http://qdos.com/schema#serviceProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#digg">
+    <q:serviceName>Digg</q:serviceName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#digg">
+    <q:serviceHomepage rdf:resource="http://digg.com/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#digg">
+    <q:canonicalUriPattern>http://digg.com/users/@USER@</q:canonicalUriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#digg">
+    <q:uriPattern>http://(?:www\.)?digg\.com/users/@USER@/?</q:uriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#digg">
+    <q:module rdf:resource="file:modules/digg.pm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#digg">
+    <q:missingPattern>&lt;h3&gt;Invalid User Provided&lt;/h3&gt;</q:missingPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#digg">
+    <q:verification rdf:resource="http://qdos.com/schema#digg"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#digg">
+    <q:icon rdf:resource="http://qdos.com/images/icons/links_digg.png"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#digg">
+    <q:hint>Enter your Digg username below, for instance ‘virdaems’.</q:hint>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#sourceforge">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#sourceforge">
+    <rdfs:subPropertyOf rdf:resource="http://qdos.com/schema#serviceProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#sourceforge">
+    <q:serviceName>Sourceforge</q:serviceName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#sourceforge">
+    <q:serviceHomepage rdf:resource="http://sourceforge.net/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#sourceforge">
+    <q:module rdf:resource="file:modules/sourceforge.pm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#sourceforge">
+    <q:canonicalUriPattern>http://sourceforge.net/users/@USER@</q:canonicalUriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#sourceforge">
+    <q:uriPattern>http://(?:www\.)?sourceforge\.net/users/@USER@/?</q:uriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#sourceforge">
+    <q:missingPattern>That user does not exist or is not yet active</q:missingPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#sourceforge">
+    <q:icon rdf:resource="http://qdos.com/images/icons/links_sourceforge.png"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#sourceforge">
+    <q:hint>Enter your Sourceforge username below, for instance ‘ioramic’.</q:hint>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#slashdot">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#slashdot">
+    <rdfs:subPropertyOf rdf:resource="http://qdos.com/schema#serviceProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#slashdot">
+    <q:serviceName>Slashdot</q:serviceName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#slashdot">
+    <q:serviceHomepage rdf:resource="http://slashdot.org/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#slashdot">
+    <q:module rdf:resource="file:modules/slashdot.pm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#slashdot">
+    <q:canonicalUriPattern>http://slashdot.org/~@USER@</q:canonicalUriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#slashdot">
+    <q:uriPattern>http://(?:www\.)?slashdot\.org/~@USER@/?</q:uriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#slashdot">
+    <q:missingPattern>The user you requested does not exist</q:missingPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#slashdot">
+    <q:icon rdf:resource="http://qdos.com/images/icons/links_slashdot.png"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#slashdot">
+    <q:hint>Enter your Slashdot username below, for instance ‘dorseinv’.</q:hint>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#foaf">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#foaf">
+    <rdfs:subPropertyOf rdf:resource="http://qdos.com/schema#serviceProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#foaf">
+    <q:serviceName>FOAF</q:serviceName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#foaf">
+    <q:serviceHomepage rdf:resource="http://www.foaf-project.org/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#foaf">
+    <q:module rdf:resource="file:modules/foaf.pm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#foaf">
+    <q:canonicalUriPattern>@URI@</q:canonicalUriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#foaf">
+    <q:uriPattern>@URI@</q:uriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#foaf">
+    <q:icon rdf:resource="http://qdos.com/images/icons/links_foaf.png"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#foaf">
+    <q:hint>Enter the URL of some FOAF RDF about you.</q:hint>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#youtube">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#youtube">
+    <rdfs:subPropertyOf rdf:resource="http://qdos.com/schema#serviceProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#youtube">
+    <q:serviceName>YouTube</q:serviceName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#youtube">
+    <q:serviceHomepage rdf:resource="http://youtube.com/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#youtube">
+    <q:canonicalUriPattern>http://youtube.com/@USER@</q:canonicalUriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#youtube">
+    <q:uriPattern>http://(?:www\.)?youtube\.com/@USER@</q:uriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#youtube">
+    <q:uriPattern>http://(?:www\.)?youtube\.com/user/@USER@</q:uriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#youtube">
+    <q:uriPattern>http://(?:www\.)?youtube\.com/profile\?user=@USER@</q:uriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#youtube">
+    <q:module rdf:resource="file:modules/youtube.pm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#youtube">
+    <q:icon rdf:resource="http://qdos.com/images/icons/links_youtube.png"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#youtube">
+    <q:hint>Enter your YouTube username below, for instance ‘famsvir’.</q:hint>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#vox">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#vox">
+    <rdfs:subPropertyOf rdf:resource="http://qdos.com/schema#serviceProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#vox">
+    <q:serviceName>Vox</q:serviceName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#vox">
+    <q:serviceHomepage rdf:resource="http://www.vox.com/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#vox">
+    <q:canonicalUriPattern>http://@USER@.vox.com/</q:canonicalUriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#vox">
+    <q:uriPattern>http://@USER@\.vox\.com/</q:uriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#vox">
+    <q:module rdf:resource="file:modules/vox.pm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#vox">
+    <q:icon rdf:resource="http://qdos.com/images/icons/links_vox.png"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#vox">
+    <q:hint>Enter your Vox username below, for instance ‘dvaemfrn’.</q:hint>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#spaces.live">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#spaces.live">
+    <rdfs:subPropertyOf rdf:resource="http://qdos.com/schema#serviceProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#spaces.live">
+    <q:serviceName>Windows Live Spaces</q:serviceName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#spaces.live">
+    <q:serviceHomepage rdf:resource="http://home.services.spaces.live.com/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#spaces.live">
+    <q:canonicalUriPattern>http://@USER@.spaces.live.com/</q:canonicalUriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#spaces.live">
+    <q:uriPattern>http://@USER@\.spaces\.live\.com/</q:uriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#spaces.live">
+    <q:module rdf:resource="file:modules/spaceslive.pm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#spaces.live">
+    <q:icon rdf:resource="http://qdos.com/images/icons/links_livespaces.png"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#spaces.live">
+    <q:hint>Enter the name of your Live Space, for instance ‘osnidnamn’.</q:hint>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#bebo">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#bebo">
+    <rdfs:subPropertyOf rdf:resource="http://qdos.com/schema#serviceProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#bebo">
+    <q:serviceName>Bebo</q:serviceName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#bebo">
+    <q:serviceHomepage rdf:resource="http://bebo.com/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#bebo">
+    <q:canonicalUriPattern>http://@USER@.bebo.com/</q:canonicalUriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#bebo">
+    <q:uriPattern>http://@USER@\.bebo\.com/</q:uriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#bebo">
+    <q:uriPattern>http://(?:www\.)?bebo\.com/@USER@/?</q:uriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#bebo">
+    <q:module rdf:resource="file:modules/bebo.pm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#bebo">
+    <q:icon rdf:resource="http://qdos.com/images/icons/links_bebo.png"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#bebo">
+    <q:hint>Enter your BeBo username below, for instance ‘svrifman’.</q:hint>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#lastfmUser">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#lastfmUser">
+    <rdfs:subPropertyOf rdf:resource="http://qdos.com/schema#serviceProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#lastfmUser">
+    <q:serviceName>Last.fm User</q:serviceName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#lastfmUser">
+    <q:serviceHomepage rdf:resource="http://www.last.fm/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#lastfmUser">
+    <q:canonicalUriPattern>http://www.last.fm/user/@USER@</q:canonicalUriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#lastfmUser">
+    <q:uriPattern>http://(?:www\.)?last\.fm/user/@USER@/?</q:uriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#lastfmUser">
+    <q:module rdf:resource="file:modules/lastfmUser.pm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#lastfmUser">
+    <q:icon rdf:resource="http://qdos.com/images/icons/links_lastfm.png"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#lastfmUser">
+    <q:hint>Enter your Last.fm username below, for instance ‘nmiavrson’.</q:hint>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#lastfmArtist">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#lastfmArtist">
+    <rdfs:subPropertyOf rdf:resource="http://qdos.com/schema#serviceProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#lastfmArtist">
+    <q:serviceName>Last.fm Artist</q:serviceName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#lastfmArtist">
+    <q:serviceHomepage rdf:resource="http://www.last.fm/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#lastfmArtist">
+    <q:uriPattern>http://www\.last\.fm/music/@USER@/?</q:uriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#lastfmArtist">
+    <q:module rdf:resource="file:modules/lastfmArtist.pm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#lastfmArtist">
+    <q:icon rdf:resource="http://qdos.com/images/icons/links_lastfm.png"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#homepage">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#homepage">
+    <rdfs:subPropertyOf rdf:resource="http://qdos.com/schema#serviceProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#homepage">
+    <q:serviceName>Website</q:serviceName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#homepage">
+    <q:canonicalUriPattern>@URI@</q:canonicalUriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#homepage">
+    <q:uriPattern>@URI@</q:uriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#homepage">
+    <q:module rdf:resource="file:modules/generic.pm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#homepage">
+    <q:icon rdf:resource="http://qdos.com/images/icons/links_generic.png"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#homepage">
+    <q:verification rdf:resource="http://qdos.com/schema#embeddedHash"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#wikipediaPage">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#wikipediaPage">
+    <rdfs:subPropertyOf rdf:resource="http://qdos.com/schema#serviceProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#wikipediaPage">
+    <q:serviceName>Wikipedia page</q:serviceName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#wikipediaPage">
+    <q:uriPattern>http://en\.wikipedia\.org/wiki/@USER@</q:uriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#wikipediaPage">
+    <q:module rdf:resource="file:modules/wikipediaPage.pm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#wikipediaPage">
+    <q:serviceHomepage rdf:resource="http://wikipedia.org"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#wikipediaPage">
+    <q:icon rdf:resource="http://qdos.com/images/icons/links_wikipedia.png"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#wikipediaUser">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#wikipediaUser">
+    <rdfs:subPropertyOf rdf:resource="http://qdos.com/schema#serviceProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#wikipediaUser">
+    <q:serviceName>Wikipedia User page</q:serviceName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#wikipediaUser">
+    <q:module rdf:resource="file:modules/wikipediaUser.pm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#wikipediaUser">
+    <q:canonicalUriPattern>http://en.wikipedia.org/wiki/User:@USER@</q:canonicalUriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#wikipediaUser">
+    <q:uriPattern>http://en\.wikipedia\.org/wiki/User:@USER@</q:uriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#wikipediaUser">
+    <q:serviceHomepage rdf:resource="http://wikipedia.org"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#wikipediaUser">
+    <q:icon rdf:resource="http://qdos.com/images/icons/links_wikipedia.png"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#wikipediaUser">
+    <q:hint>Enter your Wikipedia username below, for instance ‘Ixjavrson’.</q:hint>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#mtvArtist">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#mtvArtist">
+    <rdfs:subPropertyOf rdf:resource="http://qdos.com/schema#serviceProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#mtvArtist">
+    <q:serviceName>MTV Artist page</q:serviceName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#mtvArtist">
+    <q:serviceHomepage rdf:resource="http://www.mtv.com/music/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#mtvArtist">
+    <q:module rdf:resource="file:modules/mtvartist.pm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#mtvArtist">
+    <q:uriPattern>http://www\.mtv\.com/music/artist/@USER@</q:uriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#mtvArtist">
+    <q:icon rdf:resource="http://qdos.com/images/icons/links_mtv.png"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#codeplex">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#codeplex">
+    <rdfs:subPropertyOf rdf:resource="http://qdos.com/schema#serviceProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#codeplex">
+    <q:serviceName>Codeplex</q:serviceName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#codeplex">
+    <q:serviceHomepage rdf:resource="http://www.codeplex.com"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#codeplex">
+    <q:module rdf:resource="file:modules/codeplex.pm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#codeplex">
+    <q:canonicalUriPattern>http://www.codeplex.com/UserAccount/UserProfile.aspx?UserName=@USER@</q:canonicalUriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#codeplex">
+    <q:uriPattern>http://www\.codeplex\.com/UserAccount/UserProfile\.aspx\?UserName=@USER@</q:uriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#codeplex">
+    <q:icon rdf:resource="http://qdos.com/images/icons/links_codeplex.png"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#codeplex">
+    <q:hint>Enter your Codeplex username below, for instance ‘masidover’.</q:hint>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#delicious">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#delicious">
+    <rdfs:subPropertyOf rdf:resource="http://qdos.com/schema#serviceProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#delicious">
+    <q:serviceName>del.icio.us User Page</q:serviceName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#delicious">
+    <q:serviceHomepage rdf:resource="http://del.icio.us"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#delicious">
+    <q:module rdf:resource="file:modules/delicious.pm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#delicious">
+    <q:canonicalUriPattern>http://del.icio.us/@USER@</q:canonicalUriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#delicious">
+    <q:uriPattern>http://del\.icio\.us/@USER@</q:uriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#delicious">
+    <q:icon rdf:resource="http://qdos.com/images/icons/links_delicious.png"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#delicious">
+    <q:hint>Enter your Del.icio.us username below, for instance ‘mrifnesn’.</q:hint>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#hi5">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#hi5">
+    <rdfs:subPropertyOf rdf:resource="http://qdos.com/schema#serviceProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#hi5">
+    <q:serviceName>hi5 User Page</q:serviceName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#hi5">
+    <q:serviceHomepage rdf:resource="http://www.hi5.com"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#hi5">
+    <q:module rdf:resource="file:modules/hi5.pm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#hi5">
+    <q:canonicalUriPattern>http://www.hi5.com/friend/profile/displayProfile.do?userid=@USER@</q:canonicalUriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#hi5">
+    <q:uriPattern>http://www\.hi5\.com/friend/profile/displayProfile.do\?userid=@USER@</q:uriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#hi5">
+    <q:uriPattern>http://@USER@\.hi5\.com/</q:uriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#hi5">
+    <q:icon rdf:resource="http://qdos.com/images/icons/links_hi5.png"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#hi5">
+    <q:hint>Enter your hi5 profile URL below, for instance ‘http://www.hi5.com/friend/profile/displayProfile.do?userid=165665769’.</q:hint>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#facebookPublic">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#facebookPublic">
+    <rdfs:subPropertyOf rdf:resource="http://qdos.com/schema#serviceProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#facebookPublic">
+    <q:serviceName>FacebookPublic</q:serviceName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#facebookPublic">
+    <q:serviceHomepage rdf:resource="http://www.facebook.com"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#facebookPublic">
+    <q:module rdf:resource="file:modules/facebookPublic.pm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#facebookPublic">
+    <q:canonicalUriPattern>http://www.facebook.com/@USER@</q:canonicalUriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#facebookPublic">
+    <q:uriPattern>http://www\.facebook\.com/@USER@</q:uriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#facebookPublic">
+    <q:icon rdf:resource="http://qdos.com/images/icons/links_facebook.png"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#facebookPublic">
+    <q:hint>Enter your Facebook profile URL below, for instance ‘http://www.facebook.com/borisjohnson’.</q:hint>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#imdb">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#imdb">
+    <rdfs:subPropertyOf rdf:resource="http://qdos.com/schema#serviceProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#imdb">
+    <q:serviceName>IMDB</q:serviceName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#imdb">
+    <q:serviceHomepage rdf:resource="http://www.imdb.com/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#imdb">
+    <q:module rdf:resource="file:modules/imdbName.pm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#imdb">
+    <q:icon rdf:resource="http://qdos.com/images/icons/links_imdb.png"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#imdbName">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#imdbName">
+    <rdfs:subPropertyOf rdf:resource="http://qdos.com/schema#serviceProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#imdbName">
+    <q:serviceName>IMDB</q:serviceName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#imdbName">
+    <q:serviceHomepage rdf:resource="http://www.imdb.com/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#imdbName">
+    <q:uriPattern>http://[a-z]+\.imdb\.com/name/@USER@/?</q:uriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#imdbName">
+    <q:uriPattern>http://(?:www\.)?imdb\.com/name/@USER@/?</q:uriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#imdbName">
+    <q:module rdf:resource="file:modules/imdbName.pm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#imdbName">
+    <q:icon rdf:resource="http://qdos.com/images/icons/links_imdb.png"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#imdbUser">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#imdbUser">
+    <rdfs:subPropertyOf rdf:resource="http://qdos.com/schema#serviceProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#imdbUser">
+    <q:serviceName>IMDB User</q:serviceName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#imdbUser">
+    <q:serviceHomepage rdf:resource="http://www.imdb.com/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#imdbUser">
+    <q:uriPattern>http://(?:www\.)?imdb\.com/user/@USER@/comments/?</q:uriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#imdbUser">
+    <q:uriPattern>http://(?:www\.)?imdb\.com/user/@USER@/boards/profile/?</q:uriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#imdbUser">
+    <q:canonicalUriPattern>http://www.imdb.com/user/@USER@/comments</q:canonicalUriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#imdbUser">
+    <q:module rdf:resource="file:modules/imdbUser.pm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#imdbUser">
+    <q:icon rdf:resource="http://qdos.com/images/icons/links_imdb.png"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#imdbUser">
+    <q:hint>Enter your IMDB user comments URL below, for instance ‘http://imdb.com/user/ur17602320/comments’.</q:hint>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#twitter">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#twitter">
+    <rdfs:subPropertyOf rdf:resource="http://qdos.com/schema#serviceProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#twitter">
+    <q:serviceName>Twitter Userpage</q:serviceName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#twitter">
+    <q:serviceHomepage rdf:resource="http://twitter.com"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#twitter">
+    <q:canonicalUriPattern>http://twitter.com/@USER@/</q:canonicalUriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#twitter">
+    <q:uriPattern>http://(?:www\.)?twitter\.com/@USER@/?</q:uriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#twitter">
+    <q:module rdf:resource="file:modules/twitter.pm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#twitter">
+    <q:icon rdf:resource="http://qdos.com/images/icons/links_twitter.png"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#twitter">
+    <q:hint>Enter your Twitter username below, for instance ‘norimnave’.</q:hint>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#xanga">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#xanga">
+    <rdfs:subPropertyOf rdf:resource="http://qdos.com/schema#serviceProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#xanga">
+    <q:serviceName>Xanga</q:serviceName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#xanga">
+    <q:serviceHomepage rdf:resource="http://www.xanga.com/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#xanga">
+    <q:canonicalUriPattern>http://www.xanga.com/@USER@</q:canonicalUriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#xanga">
+    <q:uriPattern>http://(?:www\.)?xanga\.com/@USER@/?</q:uriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#xanga">
+    <q:module rdf:resource="file:modules/xanga.pm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#xanga">
+    <q:icon rdf:resource="http://qdos.com/images/icons/links_xanga.png"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#xanga">
+    <q:hint>Enter your Xanga username below, for instance ‘evinmaron’.</q:hint>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#tripadvisor">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#tripadvisor">
+    <rdfs:subPropertyOf rdf:resource="http://qdos.com/schema#serviceProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#tripadvisor">
+    <q:serviceName>TripAdvisor</q:serviceName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#tripadvisor">
+    <q:serviceHomepage rdf:resource="http://www.tripadvisor.com/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#tripadvisor">
+    <q:canonicalUriPattern>http://www.tripadvisor.com/members/@USER@</q:canonicalUriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#tripadvisor">
+    <q:uriPattern>http://www\.tripadvisor\.[^/]*/members/@USER@</q:uriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#tripadvisor">
+    <q:module rdf:resource="file:modules/tripadvisor.pm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#tripadvisor">
+    <q:icon rdf:resource="http://qdos.com/images/icons/links_tripadvisor.png"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#fotolog">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#fotolog">
+    <rdfs:subPropertyOf rdf:resource="http://qdos.com/schema#serviceProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#fotolog">
+    <q:serviceName>Fotolog</q:serviceName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#fotolog">
+    <q:serviceHomepage rdf:resource="http://www0.fotolog.com/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#fotolog">
+    <q:canonicalUriPattern>http://www.fotolog.com/@USER@</q:canonicalUriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#fotolog">
+    <q:uriPattern>http://www\.fotolog\.com/@USER@/?</q:uriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#fotolog">
+    <q:module rdf:resource="file:modules/fotolog.pm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#fotolog">
+    <q:icon rdf:resource="http://qdos.com/images/icons/links_fotolog.png"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#amazonreviews">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#amazonreviews">
+    <rdfs:subPropertyOf rdf:resource="http://qdos.com/schema#serviceProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#amazonreviews">
+    <q:serviceName>Amazon Reviews</q:serviceName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#amazonreviews">
+    <q:serviceHomepage rdf:resource="http://www.amazon.com/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#amazonreviews">
+    <q:uriPattern>https?://www\.amazon\.com/gp/pdp/profile/@USER@</q:uriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#amazonreviews">
+    <q:module rdf:resource="file:modules/amazonreviews.pm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#amazonreviews">
+    <q:icon rdf:resource="http://qdos.com/images/icons/links_amazon.png"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#zoominfo">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#zoominfo">
+    <rdfs:subPropertyOf rdf:resource="http://qdos.com/schema#serviceProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#zoominfo">
+    <q:serviceName>Zoominfo</q:serviceName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#zoominfo">
+    <q:serviceHomepage rdf:resource="http://www.zoominfo.com/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#zoominfo">
+    <q:canonicalUriPattern>http://www.zoominfo.com/Search/PersonDetail.aspx?PersonID=@USER@</q:canonicalUriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#zoominfo">
+    <q:uriPattern>http://www\.zoominfo\.com/Search/PersonDetail\.aspx\?PersonID=@USER@</q:uriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#zoominfo">
+    <q:module rdf:resource="file:modules/zoominfo.pm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#zoominfo">
+    <q:icon rdf:resource="http://qdos.com/images/icons/links_zoominfo.png"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#zoominfo">
+    <q:hint>Enter your Zoominfo profile URL below, for instance ‘http://www.zoominfo.com/Search/PersonDetail.aspx?PersonID=-538822’.</q:hint>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#spock">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#spock">
+    <rdfs:subPropertyOf rdf:resource="http://qdos.com/schema#serviceProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#spock">
+    <q:serviceName>Spock</q:serviceName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#spock">
+    <q:serviceHomepage rdf:resource="http://www.spock.com/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#spock">
+    <q:canonicalUriPattern>http://www.spock.com/@USER@</q:canonicalUriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#spock">
+    <q:uriPattern>http://(?:www\.)?spock.com/@USER@/?</q:uriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#spock">
+    <q:missingPattern>No profile was found matching </q:missingPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#spock">
+    <q:module rdf:resource="file:modules/spock.pm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#spock">
+    <q:icon rdf:resource="http://qdos.com/images/icons/links_spock.png"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#spock">
+    <q:hint>Enter your Spock profile URL below, for instance ‘http://www.spock.com/Marvin-Fenderson-MkX3P13O’.</q:hint>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#wink">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#wink">
+    <rdfs:subPropertyOf rdf:resource="http://qdos.com/schema#serviceProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#wink">
+    <q:serviceName>Wink</q:serviceName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#wink">
+    <q:serviceHomepage rdf:resource="http://wink.com/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#wink">
+    <q:canonicalUriPattern>http://wink.com/p/@USER@</q:canonicalUriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#wink">
+    <q:uriPattern>http://wink.com/p/@USER@/?</q:uriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#wink">
+    <q:uriPattern>http://wink.com/profile/@USER@/?</q:uriPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#wink">
+    <q:missingPattern>&lt;div class="text-big alignCenter"&gt;No Such User&lt;/div&gt;</q:missingPattern>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#wink">
+    <q:module rdf:resource="file:modules/wink.pm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#wink">
+    <q:icon rdf:resource="http://qdos.com/images/icons/links_wink.png"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qdos.com/schema#wink">
+    <q:hint>Enter your Wink profile URL below, for instance ‘http://wink.com/p/Marvin_Fenderson’.</q:hint>
+  </rdf:Description>
+
+
+  <rdf:Description rdf:about="file:modules/alexa.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#alexaLinksIn"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/alexa.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#alexaContributingSubdomains"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/alexa.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#alexaRank"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/alexa.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#alexa3MonthReachRank"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/alexa.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#alexa3MonthReachPerMillion"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/alexa.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#alexa3MonthPageViewsPerMillion"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/alexa.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#alexa3monthPagePageViewsRank"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/alexa.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#alexa3monthPageViewPerUser"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/amazonreviews.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#amazonRank"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/amazonreviews.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#amazonReviews"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/amazonreviews.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#amazonReviewsHelpful"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/amazonreviews.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#amazonListmaniaViews"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/amazonreviews.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#amazonListmaniaLists"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/amazonreviews.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#amazonListmaniaListsHelpful"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/amazonreviews.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#amazonGuidesViews"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/amazonreviews.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#amazonGuides"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/amazonreviews.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#amazonGuidesHelpful"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/amazonreviews.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#amazonImages"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/amazonreviews.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#amazonFriends"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/amazonreviews.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#amazonInteresingPeople"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/amazonreviews.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#amazonTags"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/amazonreviews.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#amazonProductsTagged"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/amazonreviews.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#amazonWishList"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/bebo.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#beboProfileViews"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/bebo.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#beboLuv"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/bebo.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#beboFriends"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/bebo.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#beboBlog"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/bebo.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#beboPhotos"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/bebo.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#beboAlbums"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/bebo.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#beboWhiteboard"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/blog.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#blogTechnoratiReactions"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/blog.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#blogTechnoratiReactionFreshnessMins"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/blog.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#blogTechnoratiAuthority"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/blog.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#blogTechnoratiRank"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/blog.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#blogHomepageLength"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/blog.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#blogHomepageHref"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/blog.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#blogHomepageDiggs"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/blog.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#blogHomepageTags"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/blog.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#blogHomePageBookmarks"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/blog.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#blogHomePageExternals"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/blog.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#blogNumberofDaysSinceLastEntry"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/blog.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#blogAverageEntriesPerDay"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/blog.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#blogTotalEntries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/blog.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#blogTotalEntries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/codeplex.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#cpProjects"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/codeplex.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#cpRecentActivityLast60Days"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/delicious.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#deliciousItems"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/delicious.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#deliciousWebResource"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/delicious.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#deliciousTotalResources"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/delicious.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#deliciousCategories"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/digg.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#diggProfileViews"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/digg.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#diggDiggs"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/digg.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#diggComments"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/digg.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#diggFriends"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/digg.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#diggFans"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/digg.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#diggSubmissions"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/digg.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#diggPopular"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/digg.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#diggUncoming"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/ebay.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#ebayFeedback"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/ebay.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#ebayPositive"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/email.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#avEmailOccurance"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/epinions.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#epinionsTrusts"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/epinions.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#epinionsTrustedBy"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/epinions.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#epinionsReviewsWritten"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/epinions.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#epinionsMemberVisits"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/epinions.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#epinionsTotalVisits"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/flickr.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#flickrPublicPhotos"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/flickr.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#flickrPublicGroups"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/flickr.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#flickrPublicContacts"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/flickr.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#flickrPublicFavorites"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/foaf.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#foafavLinksIn"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/foaf.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#foafLength"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/foaf.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#foafLinkedResources"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/foaf.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#foafPeople"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/foaf.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#foafInterests"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/foaf.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#foafProjects"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/foaf.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#foafHoldsAccount"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/foaf.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#foafMade"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/foaf.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#foafKnows"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/foaf.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#foafImages"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/foaf.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#foafDepictions"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/fotolog.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#fotologGuestbookMessages"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/fotolog.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#fotologFriends"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/fotolog.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#fotologPhotos"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/friendster.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#friendsterComments"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/friendster.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#friendsterFriends"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/friendster.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#friendsterGroups"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/friendster.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#friendsterPhotos"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/friendster.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#friendsterFan"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/generic.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#homepageMentions"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/generic.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#homepageLength"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/generic.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#homepageLinksOut"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/generic.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#diggs"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/generic.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#avLinksin"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/generic.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#deliciousTagings"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/hi5.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#hi5ProfileViews"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/hi5.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#hi5Photos"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/hi5.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#hi5Friends"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/hi5.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#hi5Fives"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/hi5.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#hi5ProfileComments"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/hi5.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#hi5PhotosComments"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/hi5.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#hi5Scraps"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/lastfmArtist.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#lastfmScrobbleCount"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/lastfmArtist.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#lastfmArtistLabels"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/lastfmArtist.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#lastfmArtistImages"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/lastfmArtist.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#lastfmArtistEvents"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/lastfmArtist.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#lastfmArtistAlbums"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/lastfmArtist.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#lastfmArtistJournals"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/lastfmUser.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#lastfmUserPlaycount"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/lastfmUser.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#lastfmUserPosts"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/lastfmUser.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#lastfmFriends"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/lastfmUser.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#lastfmGroups"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/lastfmUser.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#lastfmJournalEntries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/lastfmUser.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#lastfmJournalComments"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/linkedin.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#liConnections"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/linkedin.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#liRecommendations"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/linkedin.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#liWebsites"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/lj.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#ljFriendsOut"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/lj.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#ljFriendsIn"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/lj.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#ljMemories"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/lj.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#ljInterests"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/lj.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#ljCommunities"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/lj.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#ljSyndicated"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/lj.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#ljVirtualGifts"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/lj.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#ljJournalEntries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/lj.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#ljCommentsPosted"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/lj.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#ljCommentsReceived"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/lj.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#ljPostingAccess"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/lj.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#ljPictures"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/mtvartist.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#mtvArtistBioLinks"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/mtvartist.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#mtvArtistVideos"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/mtvartist.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#mtvArtistPerformances"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/mtvartist.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#mtvArtistNews"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/mtvartist.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#mtvArtistPhotos"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/mtvartist.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#mtvArtistAlbums"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/mtvartist.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#mtvArtistRingtones"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/mtvartist.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#mtvArtistRelatedArtist"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/mtvartist.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#mtvArtistFollowers"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/myspace.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#msFriends"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/myspace.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#msComments"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/myspace.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#msProfileView"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/myspace.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#msBlogEntries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/myspace.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#msBlogKudos"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/myspace.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#msVideoPlays"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/myspace.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#msVideoSubscribers"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/myspace.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#msVideoNumberVideos"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/myspace.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#msVideoAverageRating"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/myspace.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#msConcerts"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/slashdot.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#sdUserID"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/slashdot.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#sdComments"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/slashdot.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#sdJournals"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/slashdot.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#sdFriends"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/slashdot.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#sdFans"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/slashdot.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#sdFoes"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/slashdot.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#sdFoesOfFriends"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/slashdot.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#sdFriendsOfFoes"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/slashdot.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#sdFreaks"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/slashdot.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#sdBookmarks"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/sourceforge.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#sfProjects"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/sourceforge.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#sfDiaryEntries"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/sourceforge.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#sfDonations"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/sourceforge.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#sfServices"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/sourceforge.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#sfReputation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/sourceforge.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#sfTotalOrders"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/sourceforge.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#sfValueUSD"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/spaceslive.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#spaceslivePhotos"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/spaceslive.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#spacesliveAlbums"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/spaceslive.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#spacesliveFriends"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/spaceslive.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#spacesliveGuestbookComments"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/spaceslive.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#spacesliveBlogPosts"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/spaceslive.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#spacesliveLists"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/technorati.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#technoratiBlogs"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/technorati.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#technoratiFans"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/technorati.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#technoratiAuthority"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/technorati.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#technoratiWtfsWritten"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/technorati.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#technoratiWtfsVotedOn"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/technorati.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#technoratiFavourites"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/technorati.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#technoratiTags"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/tripadvisor.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#tripadvisorCompliments"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/tripadvisor.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#tripadvisorCitiesVisited"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/tripadvisor.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#tripadvisorTravellerNetwork"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/tripadvisor.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#tripadvisorReviews"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/tripadvisor.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#tripadvisorPhotos"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/tripadvisor.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#tripadvisorForums"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/tripadvisor.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#tripadvisorGoLists"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/tripadvisor.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#tripadvisorVideos"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/tripadvisor.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#tripadvisorInsidePages"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/twitter.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#twitterFollowing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/twitter.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#twitterFollowers"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/twitter.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#twitterFavourties"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/twitter.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#twitterUpdates"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/vox.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#voxInterests"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/vox.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#voxGroups"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/vox.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#voxFavourites"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/vox.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#voxTags"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/vox.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#voxNeighbours"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/vox.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#voxBlogPosts"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/vox.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#voxPhotos"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/vox.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#voxAudio"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/vox.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#voxBooks"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/vox.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#voxVideos"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/wikipediaPage.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#wikiPageCategories"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/wikipediaPage.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#wikiPageTranslations"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/wikipediaPage.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#wikiPageLinks"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/wikipediaPage.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#wikiPageExternalLinks"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/wikipediaPage.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#wikiPageBytes"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/wikipediaPage.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#wikiPageTalkContents"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/wikipediaPage.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#wikiPageTalkCategories"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/wikipediaPage.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#wikiPageTalkBytes"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/wikipediaPage.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#wikiPageRevisionCount"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/wikipediaPage.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#wikiPageLinksIn"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/wikipediaUser.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#wikiUserCategories"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/wikipediaUser.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#wikiUserLinks"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/wikipediaUser.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#wikiUserExternalLinks"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/wikipediaUser.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#wikiUserBytes"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/wikipediaUser.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#wikiUserTalkContents"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/wikipediaUser.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#wikiUserTalkCategories"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/wikipediaUser.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#wikiUserTalkBytes"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/wikipediaUser.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#wikiUserContributionCount"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/wikipediaUser.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#wikiUserLinksIn"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/xanga.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#xangaSubscriptions"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/xanga.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#xangaPhotos"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/xanga.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#xangaBlogPosts"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/xanga.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#xangaBlogComments"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/xanga.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#xangaBlogEprops"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/xanga.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#xangaFriends"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/xanga.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#xangaMemories"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/xanga.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#xangaChatboardItems"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/xanga.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#xangaTags"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/youtube.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#ytSubscribers"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/youtube.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#ytViews"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/youtube.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#ytWatched"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/youtube.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#ytBulletins"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/youtube.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#ytVideos"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/youtube.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#ytComments"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/youtube.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#ytSubscriptions"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/youtube.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#ytFriends"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/youtube.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#ytFavorites"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/youtube.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#ytVideoBlogs"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/reddit.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#redditKarma"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/reddit.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#redditPointsFrontPage"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/ringo.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#ringoFriends"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/ringo.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#ringoPhotosAndVideos"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/ringo.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#ringoCommentsToUser"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/ringo.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#ringoCommentsByUser"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/facebookPublic.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#fbFans"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/imdbName.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#imdbActorIn"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/imdbName.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#imdbSountrackFor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/imdbName.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#imdbWriterFor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/imdbName.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#imdbProducerFor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/imdbName.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#imdbDirectorFor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/imdbName.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#imdbEditorFor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/imdbName.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#imdbCinematographerFor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/imdbName.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#imdbCameraAndElectricalFor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/imdbName.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#imdbSoundDepartmentFor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/imdbName.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#imdbSpecicalEffectsFor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/imdbName.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#imdbMiscCrewFor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/imdbName.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#imdbThankedFor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/imdbName.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#imdbSelfAppearance"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/imdbName.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#imdbVisualEffectsFor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/imdbName.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#imdbArchiveFootage"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/imdbName.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#imdbAwardsNominated"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/imdbName.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#imdbAwardsWon"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/imdbName.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#imdbOtherAwards"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/zoominfo.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#zoominfoConfidence"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/zoominfo.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#zoominfoViews"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/zoominfo.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#zoominfoForwards"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/zoominfo.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#zoominfoWebrefs"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/spock.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#spockPower"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/wink.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#winkPlaces"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/wink.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#winkFriends"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:modules/wink.pm">
+    <q:producesDatum rdf:resource="http://qdos.com/schema#winkPhotos"/>
+  </rdf:Description>
+</rdf:RDF>
