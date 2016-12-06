@@ -1,0 +1,405 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.owl-ontologies.com/unnamed.owl#"
+     xml:base="http://www.owl-ontologies.com/unnamed.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.owl-ontologies.com/unnamed.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#continent -->
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/unnamed.owl#continent">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Venue"/>
+        <rdfs:range rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Continent"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">which continent the conference is taking place</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#for -->
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/unnamed.owl#for">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Call"/>
+        <rdfs:range rdf:resource="http://www.owl-ontologies.com/unnamed.owl#AcademicEvent"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">which event the call is for</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#involved -->
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/unnamed.owl#involved">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/unnamed.owl#AcademicEvent"/>
+        <rdfs:range rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Person"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a person that is involved in the event</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#subevent -->
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/unnamed.owl#subevent">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/unnamed.owl#AcademicEvent"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a talk is a subevent of workshop is a subevent of conference; part-of relation between events to build up a hierarchy, ie. talk partof workshop partof track partof conference</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#takesplace -->
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/unnamed.owl#takesplace">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/unnamed.owl#AcademicEvent"/>
+        <rdfs:range rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Venue"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">city, state, country</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#deadline -->
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/unnamed.owl#deadline">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Call"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">first deadline (e.g. abstracts) (what happens if deadline shifts)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#description -->
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/unnamed.owl#description">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">the subject of the email</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#details -->
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/unnamed.owl#details">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Call"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">email message in either xhtml (XMLLiteral) or plain text</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/unnamed.owl#name">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Venue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subclass of rdfs:label</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#startdate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/unnamed.owl#startdate">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/unnamed.owl#AcademicEvent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">startdate of the event</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#title -->
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/unnamed.owl#title">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/unnamed.owl#AcademicEvent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">short name (e.g. SIGMOD, VLDB), subclass of rdfs:label</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#AcademicEvent -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#AcademicEvent">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">an academic event</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Call -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Call">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a call</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#CallForDemos -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#CallForDemos">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Call"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">research demos</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#CallForExhibits -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#CallForExhibits">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Call"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">industrial exhibits</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#CallForPapers -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#CallForPapers">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Call"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">research papers</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#CallForParticipation -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#CallForParticipation">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Call"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">participation (shouldn&apos;t that be the general class?)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#CallForReports -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#CallForReports">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Call"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">industrial reports</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#CallForVideos -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#CallForVideos">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Call"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">not sure what this is</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Conference -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Conference">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#AcademicEvent"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a conference</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Continent -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Continent">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Venue"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a continent on planet earth (the only drop-down selection in dbworld)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#DemoSession -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#DemoSession">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#AcademicEvent"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a demonstration session</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Person -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Person">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a foaf:Person</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#PosterSession -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#PosterSession">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#AcademicEvent"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a poster session</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Talk -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Talk">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#AcademicEvent"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A single talk</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Track -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Track">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#AcademicEvent"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a track</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Tutorial -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Tutorial">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#AcademicEvent"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a tutorial</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Venue -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Venue">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">more general than location (could be an organization or a location (lat, lon)l)
+might be dropped for a vocabulary that models venues</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Workshop -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Workshop">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#AcademicEvent"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a workshop</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Africa -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/unnamed.owl#Africa">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Continent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Antarctica -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/unnamed.owl#Antarctica">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Continent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Asia -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/unnamed.owl#Asia">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Continent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Australia -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/unnamed.owl#Australia">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Continent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Europe -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/unnamed.owl#Europe">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Continent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#NorthAmerica -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/unnamed.owl#NorthAmerica">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Continent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#SouthAmerica -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/unnamed.owl#SouthAmerica">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Continent"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,183 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns="http://www.owl-ontologies.com/unnamed.owl#"
+  xml:base="http://www.owl-ontologies.com/unnamed.owl">
+  <owl:Ontology rdf:about=""/>
+  <owl:Class rdf:ID="Track">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >a track</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="AcademicEvent"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Person">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >a foaf:Person</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="CallForExhibits">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >industrial exhibits</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Call"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#Call">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >a call</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="Talk">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A single talk</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#AcademicEvent"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="CallForReports">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >industrial reports</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#Call"/>
+  </owl:Class>
+  <owl:Class rdf:ID="CallForPapers">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >research papers</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#Call"/>
+  </owl:Class>
+  <owl:Class rdf:about="#AcademicEvent">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >an academic event</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="CallForDemos">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >research demos</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#Call"/>
+  </owl:Class>
+  <owl:Class rdf:ID="DemoSession">
+    <rdfs:subClassOf rdf:resource="#AcademicEvent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >a demonstration session</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="CallForParticipation">
+    <rdfs:subClassOf rdf:resource="#Call"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >participation (shouldn't that be the general class?)</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="PosterSession">
+    <rdfs:subClassOf rdf:resource="#AcademicEvent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >a poster session</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="Continent">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >a continent on planet earth (the only drop-down selection in dbworld)</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Venue"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Workshop">
+    <rdfs:subClassOf rdf:resource="#AcademicEvent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >a workshop</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="Tutorial">
+    <rdfs:subClassOf rdf:resource="#AcademicEvent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >a tutorial</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="CallForVideos">
+    <rdfs:subClassOf rdf:resource="#Call"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >not sure what this is</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="#Venue">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >more general than location (could be an organization or a location (lat, lon)l)
+might be dropped for a vocabulary that models venues</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="Conference">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >a conference</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#AcademicEvent"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:ID="involved">
+    <rdfs:domain rdf:resource="#AcademicEvent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >a person that is involved in the event</rdfs:comment>
+    <rdfs:range rdf:resource="#Person"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="takesplace">
+    <rdfs:domain rdf:resource="#AcademicEvent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >city, state, country</rdfs:comment>
+    <rdfs:range rdf:resource="#Venue"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="continent">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >which continent the conference is taking place</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="#Venue"/>
+    <rdfs:range rdf:resource="#Continent"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="for">
+    <rdfs:range rdf:resource="#AcademicEvent"/>
+    <rdfs:domain rdf:resource="#Call"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >which event the call is for</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:ID="deadline">
+    <rdfs:domain rdf:resource="#Call"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >first deadline (e.g. abstracts) (what happens if deadline shifts)</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="name">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#Venue"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >subclass of rdfs:label</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="startdate">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >startdate of the event</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="#AcademicEvent"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="details">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#Call"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >email message in either xhtml (XMLLiteral) or plain text</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="description">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >the subject of the email</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:TransitiveProperty rdf:ID="subevent">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >a talk is a subevent of workshop is a subevent of conference; part-of relation between events to build up a hierarchy, ie. talk partof workshop partof track partof conference</rdfs:comment>
+    <rdfs:domain rdf:resource="#AcademicEvent"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:TransitiveProperty>
+  <owl:FunctionalProperty rdf:ID="title">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >short name (e.g. SIGMOD, VLDB), subclass of rdfs:label</rdfs:comment>
+    <rdfs:domain rdf:resource="#AcademicEvent"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:FunctionalProperty>
+  <Continent rdf:ID="Europe"/>
+  <Continent rdf:ID="Australia"/>
+  <Continent rdf:ID="SouthAmerica"/>
+  <Continent rdf:ID="NorthAmerica"/>
+  <Continent rdf:ID="Africa"/>
+  <Continent rdf:ID="Asia"/>
+  <Continent rdf:ID="Antarctica"/>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 1.3, Build 225.4)  http://protege.stanford.edu -->

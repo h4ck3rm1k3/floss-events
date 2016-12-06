@@ -1,0 +1,2683 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY ittags "http://www.ittags.com/ontology/ittags.owl#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+<rdf:RDF xmlns="http://www.ittags.com/ontology/ittags.owl#" xml:base="http://www.ittags.com/ontology/ittags.owl" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:ittags="http://www.ittags.com/ontology/ittags.owl#">
+    <owl:Ontology rdf:about="">
+        <rdfs:label>Information Technology Tags (ITTAGS)</rdfs:label>
+        <owl:versionInfo>alpha 1.0 - It is anticipated that we will have 3 alpha versions before beta. Most of the heavy lifting will be done during the alpha stage and it is expected that beta will be reasonabley stable</owl:versionInfo>
+        <rdfs:comment>To stay informed of ITTAGS progress and updates please subscribe to our e-mail newsletter.</rdfs:comment>
+        <dc:creator>Kevin Jenkins</dc:creator>
+        <rdfs:comment>The ITTAGS (Information Technology Tags) Ontology provides the main concepts and properties required to describe information about technology companies, people and products on the Semantic Web. ITTAGS is a highly comprehensive Ontology that includes news, blogs, investors, jobs and resumes associated with the business of information technology.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#aboutCompany -->
+
+    <owl:ObjectProperty rdf:about="#aboutCompany">
+        <rdfs:comment>This property describes any reference to a Technology Company by an ITTAGS individual.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#aboutExecutive -->
+
+    <owl:ObjectProperty rdf:about="#aboutExecutive">
+        <rdfs:comment>This property describes any reference to an Executive by an ITTAGS individual.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#aboutNiche -->
+
+    <owl:ObjectProperty rdf:about="#aboutNiche">
+        <rdfs:comment>This property describes any reference to a Technology Niche by an ITTAGS individual.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#aboutProduct -->
+
+    <owl:ObjectProperty rdf:about="#aboutProduct">
+        <rdfs:comment>This property describes any reference to a Technology Product by an ITTAGS individual.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#hasAuthor -->
+
+    <owl:ObjectProperty rdf:about="#hasAuthor">
+        <rdfs:comment>This property describes the author of a Technology News story.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#hasBlog -->
+
+    <owl:ObjectProperty rdf:about="#hasBlog"/>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#hasBoardMember -->
+
+    <owl:ObjectProperty rdf:about="#hasBoardMember"/>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#hasCEO -->
+
+    <owl:ObjectProperty rdf:about="#hasCEO">
+        <rdfs:subPropertyOf rdf:resource="#hasExecutive"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#hasCTO -->
+
+    <owl:ObjectProperty rdf:about="#hasCTO">
+        <rdfs:subPropertyOf rdf:resource="#hasExecutive"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#hasCareerSite -->
+
+    <owl:ObjectProperty rdf:about="#hasCareerSite"/>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#hasCity -->
+
+    <owl:ObjectProperty rdf:about="#hasCity"/>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#hasClient -->
+
+    <owl:ObjectProperty rdf:about="#hasClient">
+        <rdfs:comment>This property associates a Technology Company, Technology Product, Technology Service or Technical Recruiter with a Technology Company or Company Client.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#hasCompanyContact -->
+
+    <owl:ObjectProperty rdf:about="#hasCompanyContact">
+        <rdfs:comment>This property associates a Technology Person or Technical Recruiter with a Technology Company or Company employee</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#hasCompanyName -->
+
+    <owl:ObjectProperty rdf:about="#hasCompanyName"/>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#hasEmployee -->
+
+    <owl:ObjectProperty rdf:about="#hasEmployee">
+        <rdfs:comment>This property describes an Employee of a Technology Company.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#hasExecutive -->
+
+    <owl:ObjectProperty rdf:about="#hasExecutive">
+        <rdfs:comment>This property describes an Executive of a Technology Company.</rdfs:comment>
+        <owl:inverseOf rdf:resource="#isExecutiveOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#hasExperience -->
+
+    <owl:ObjectProperty rdf:about="#hasExperience">
+        <rdfs:comment>This property describes the experience a Technology Person. Experience is exposure to an industry or niche (note difference from skill) .</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#hasFirstName -->
+
+    <owl:ObjectProperty rdf:about="#hasFirstName">
+        <rdfs:domain rdf:resource="#TechPerson"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#hasInHub -->
+
+    <owl:ObjectProperty rdf:about="#hasInHub">
+        <rdfs:subPropertyOf rdf:resource="#hasCareerSite"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#hasInvestor -->
+
+    <owl:ObjectProperty rdf:about="#hasInvestor"/>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#hasJobOpportunity -->
+
+    <owl:ObjectProperty rdf:about="#hasJobOpportunity"/>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#hasLastName -->
+
+    <owl:ObjectProperty rdf:about="#hasLastName"/>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#hasLinkedinProfile -->
+
+    <owl:ObjectProperty rdf:about="#hasLinkedinProfile"/>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#hasLocation -->
+
+    <owl:ObjectProperty rdf:about="#hasLocation"/>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#hasMediaContact -->
+
+    <owl:ObjectProperty rdf:about="#hasMediaContact"/>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#hasName -->
+
+    <owl:ObjectProperty rdf:about="#hasName"/>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#hasNews -->
+
+    <owl:ObjectProperty rdf:about="#hasNews"/>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#hasNiche -->
+
+    <owl:ObjectProperty rdf:about="#hasNiche">
+        <rdfs:comment>This property describes a possessive between an ITTAGS individual and a Technology Niche.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#hasObjective -->
+
+    <owl:ObjectProperty rdf:about="#hasObjective"/>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#hasProduct -->
+
+    <owl:ObjectProperty rdf:about="#hasProduct">
+        <rdfs:comment>A Company that offers a technology Product.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#hasProductName -->
+
+    <owl:ObjectProperty rdf:about="#hasProductName"/>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#hasResume -->
+
+    <owl:ObjectProperty rdf:about="#hasResume">
+        <owl:inverseOf rdf:resource="#isResumeOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#hasService -->
+
+    <owl:ObjectProperty rdf:about="#hasService"/>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#hasSkill -->
+
+    <owl:ObjectProperty rdf:about="#hasSkill">
+        <rdfs:comment>This property describes the skill a Technology Person. A skill is a hands-on . (note difference from has-experience)</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#hasSocialGroup -->
+
+    <owl:ObjectProperty rdf:about="#hasSocialGroup">
+        <owl:inverseOf rdf:resource="#isSocialGroupOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#hasSocialProfile -->
+
+    <owl:ObjectProperty rdf:about="#hasSocialProfile"/>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#hasStory -->
+
+    <owl:ObjectProperty rdf:about="#hasStory"/>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#hasTalentHub -->
+
+    <owl:ObjectProperty rdf:about="#hasTalentHub">
+        <rdfs:subPropertyOf rdf:resource="#hasCareerSite"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#hasTitle -->
+
+    <owl:ObjectProperty rdf:about="#hasTitle">
+        <rdfs:comment>This property does not distinguish between a past or present title held by a Technology Person.</rdfs:comment>
+        <rdfs:comment>A job title is a Technology Person's official job title. It is important to understand the distinction between this class and has-role class which is concerned with category of the job.  For example, Sr. Java Developer uses the object property has-job-title. Whereas, Developer as a job type uses has-role-of.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#hasWebsite -->
+
+    <owl:ObjectProperty rdf:about="#hasWebsite"/>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#inAreaCode -->
+
+    <owl:ObjectProperty rdf:about="#inAreaCode">
+        <rdfs:comment>This property describes the Area Code location of an ITTAGS individual.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#inCity -->
+
+    <owl:ObjectProperty rdf:about="#inCity"/>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#inHotbed -->
+
+    <owl:ObjectProperty rdf:about="#inHotbed"/>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#inMetroArea -->
+
+    <owl:ObjectProperty rdf:about="#inMetroArea">
+        <rdfs:comment>This property describes the Metro Area location of an ITTAGS individual.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#inPostalCode -->
+
+    <owl:ObjectProperty rdf:about="#inPostalCode">
+        <rdfs:comment>This property describes the Postal Code location of an ITTAGS individual.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#inState -->
+
+    <owl:ObjectProperty rdf:about="#inState">
+        <rdfs:comment>This property describes the State location of an ITTAGS individual.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#isAuthorOf -->
+
+    <owl:ObjectProperty rdf:about="#isAuthorOf">
+        <owl:inverseOf rdf:resource="#hasAuthor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#isBlogOf -->
+
+    <owl:ObjectProperty rdf:about="#isBlogOf">
+        <owl:inverseOf rdf:resource="#hasBlog"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#isBoardMemberOf -->
+
+    <owl:ObjectProperty rdf:about="#isBoardMemberOf">
+        <owl:inverseOf rdf:resource="#hasBoardMember"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#isCityOf -->
+
+    <owl:ObjectProperty rdf:about="#isCityOf"/>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#isClientOf -->
+
+    <owl:ObjectProperty rdf:about="#isClientOf">
+        <owl:inverseOf rdf:resource="#hasClient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#isCompanyContactOf -->
+
+    <owl:ObjectProperty rdf:about="#isCompanyContactOf">
+        <owl:inverseOf rdf:resource="#hasCompanyContact"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#isEmployeeOf -->
+
+    <owl:ObjectProperty rdf:about="#isEmployeeOf">
+        <owl:inverseOf rdf:resource="#hasEmployee"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#isExecutiveOf -->
+
+    <owl:ObjectProperty rdf:about="#isExecutiveOf"/>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#isHotbedOf -->
+
+    <owl:ObjectProperty rdf:about="#isHotbedOf">
+        <owl:inverseOf rdf:resource="#inHotbed"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#isInvestorOf -->
+
+    <owl:ObjectProperty rdf:about="#isInvestorOf">
+        <owl:inverseOf rdf:resource="#hasInvestor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#isJobOpportunityAt -->
+
+    <owl:ObjectProperty rdf:about="#isJobOpportunityAt">
+        <owl:inverseOf rdf:resource="#hasJobOpportunity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#isJobTitleOf -->
+
+    <owl:ObjectProperty rdf:about="#isJobTitleOf">
+        <owl:inverseOf rdf:resource="#hasTitle"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#isLocationOf -->
+
+    <owl:ObjectProperty rdf:about="#isLocationOf">
+        <owl:inverseOf rdf:resource="#hasLocation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#isMetroAreaOf -->
+
+    <owl:ObjectProperty rdf:about="#isMetroAreaOf"/>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#isNameOf -->
+
+    <owl:ObjectProperty rdf:about="#isNameOf">
+        <owl:inverseOf rdf:resource="#hasName"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#isNewsOf -->
+
+    <owl:ObjectProperty rdf:about="#isNewsOf">
+        <owl:inverseOf rdf:resource="#hasNews"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#isNicheOf -->
+
+    <owl:ObjectProperty rdf:about="#isNicheOf">
+        <owl:inverseOf rdf:resource="#hasNiche"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#isProductOf -->
+
+    <owl:ObjectProperty rdf:about="#isProductOf">
+        <owl:inverseOf rdf:resource="#hasProduct"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#isResumeOf -->
+
+    <owl:ObjectProperty rdf:about="#isResumeOf"/>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#isServiceOf -->
+
+    <owl:ObjectProperty rdf:about="#isServiceOf">
+        <owl:inverseOf rdf:resource="#hasService"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#isSocialGroupOf -->
+
+    <owl:ObjectProperty rdf:about="#isSocialGroupOf"/>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#isSocialProfileOf -->
+
+    <owl:ObjectProperty rdf:about="#isSocialProfileOf">
+        <owl:inverseOf rdf:resource="#hasSocialProfile"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#isStateOf -->
+
+    <owl:ObjectProperty rdf:about="#isStateOf"/>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#isWebsiteOf -->
+
+    <owl:ObjectProperty rdf:about="#isWebsiteOf">
+        <owl:inverseOf rdf:resource="#hasWebsite"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#isZipCodeOf -->
+
+    <owl:ObjectProperty rdf:about="#isZipCodeOf"/>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#servesVertical -->
+
+    <owl:ObjectProperty rdf:about="#servesVertical"/>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#verticalServedBy -->
+
+    <owl:ObjectProperty rdf:about="#verticalServedBy">
+        <owl:inverseOf rdf:resource="#servesVertical"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#phoneNumber -->
+
+    <owl:DatatypeProperty rdf:about="#phoneNumber"/>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#streetAddress -->
+
+    <owl:DatatypeProperty rdf:about="#streetAddress"/>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#url -->
+
+    <owl:DatatypeProperty rdf:about="#url"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#Advertising_Network -->
+
+    <owl:Class rdf:about="#Advertising_Network">
+        <rdfs:subClassOf rdf:resource="#Service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#AnalystBusiness -->
+
+    <owl:Class rdf:about="#AnalystBusiness">
+        <rdfs:subClassOf rdf:resource="#Functional"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#AnalystSystems -->
+
+    <owl:Class rdf:about="#AnalystSystems">
+        <rdfs:subClassOf rdf:resource="#Technical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#AntivirusSecurityDesktopSoftware -->
+
+    <owl:Class rdf:about="#AntivirusSecurityDesktopSoftware">
+        <rdfs:subClassOf rdf:resource="#DesktopSecuritySoftware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#AuctionEcommerceWebsite -->
+
+    <owl:Class rdf:about="#AuctionEcommerceWebsite">
+        <rdfs:subClassOf rdf:resource="#EcommerceWebsite"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#B2bEcommerceWebsite -->
+
+    <owl:Class rdf:about="#B2bEcommerceWebsite">
+        <rdfs:subClassOf rdf:resource="#EcommerceWebsite"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#Blog -->
+
+    <owl:Class rdf:about="#Blog">
+        <rdfs:subClassOf rdf:resource="#SocialMedia"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasTitle"/>
+                <owl:allValuesFrom rdf:resource="#Blog"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasStory"/>
+                <owl:allValuesFrom rdf:resource="#Blog"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>The main container for an ITTAGS Technology Blog post. A Technology Blog is authroed by a Technology Company or a Technology Person.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#BlogSocialNetworkWebsite -->
+
+    <owl:Class rdf:about="#BlogSocialNetworkWebsite">
+        <rdfs:label>Blog Website</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#SocialNetworkWebsite"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#BoardMember -->
+
+    <owl:Class rdf:about="#BoardMember">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#TechPerson"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#isBoardMemberOf"/>
+                        <owl:someValuesFrom rdf:resource="#TechCompany"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#BusinessWebsite -->
+
+    <owl:Class rdf:about="#BusinessWebsite">
+        <rdfs:label>Business Network Website</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Website"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#CEO -->
+
+    <owl:Class rdf:about="#CEO">
+        <rdfs:subClassOf rdf:resource="#Executive"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#CFO -->
+
+    <owl:Class rdf:about="#CFO">
+        <rdfs:subClassOf rdf:resource="#Executive"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#CTO -->
+
+    <owl:Class rdf:about="#CTO">
+        <rdfs:subClassOf rdf:resource="#Executive"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#City -->
+
+    <owl:Class rdf:about="#City">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#Location"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#isCityOf"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#Client -->
+
+    <owl:Class rdf:about="#Client">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#isClientOf"/>
+                <owl:someValuesFrom rdf:resource="#TechCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>This class describes any Company or Person who is not a Technology Company or Technology Person but who a Technology Client relationship with .  It also describes a Client relationships with a Technical Recruiter established exclusively for the purpose of filling a Technology Job within a Company that is not a Technology Company.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#Communication-Network-Wireless-Service -->
+
+    <owl:Class rdf:about="#Communication-Network-Wireless-Service">
+        <rdfs:subClassOf rdf:resource="#CommunicationNetworkService"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#CommunicationNetworkService -->
+
+    <owl:Class rdf:about="#CommunicationNetworkService">
+        <rdfs:subClassOf rdf:resource="#Service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#Communications-Network-Broadband-Service -->
+
+    <owl:Class rdf:about="#Communications-Network-Broadband-Service">
+        <rdfs:subClassOf rdf:resource="#CommunicationNetworkService"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#Communications-Network-Global-Positioning-Service -->
+
+    <owl:Class rdf:about="#Communications-Network-Global-Positioning-Service">
+        <rdfs:subClassOf rdf:resource="#CommunicationNetworkService"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#CompanyBlog -->
+
+    <owl:Class rdf:about="#CompanyBlog">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#Blog"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#hasAuthor"/>
+                        <owl:someValuesFrom rdf:resource="#TechCompany"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:disjointWith rdf:resource="#PersonalBlog"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#CompanyName -->
+
+    <owl:Class rdf:about="#CompanyName">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#Name"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#isNameOf"/>
+                        <owl:allValuesFrom rdf:resource="#TechCompany"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#ConsultingCompany -->
+
+    <owl:Class rdf:about="#ConsultingCompany">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#TechCompany"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#hasService"/>
+                        <owl:allValuesFrom rdf:resource="#TechConsultant"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="#TechCompany"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#Content-Delivery-Network -->
+
+    <owl:Class rdf:about="#Content-Delivery-Network">
+        <rdfs:subClassOf rdf:resource="#Service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#Data-Storage-Hardware -->
+
+    <owl:Class rdf:about="#Data-Storage-Hardware">
+        <rdfs:subClassOf rdf:resource="#Hardware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#DataSecurityDesktopSoftware -->
+
+    <owl:Class rdf:about="#DataSecurityDesktopSoftware">
+        <rdfs:subClassOf rdf:resource="#DesktopSecuritySoftware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#Desktop-Office-Accounting-Software -->
+
+    <owl:Class rdf:about="#Desktop-Office-Accounting-Software">
+        <rdfs:subClassOf rdf:resource="#DesktopOfficeSoftware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#Desktop-System-OS-Software -->
+
+    <owl:Class rdf:about="#Desktop-System-OS-Software">
+        <rdfs:subClassOf rdf:resource="#DesktopSystemSoftware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#DesktopDataBackupSoftware -->
+
+    <owl:Class rdf:about="#DesktopDataBackupSoftware">
+        <rdfs:subClassOf rdf:resource="#DesktopSystemSoftware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#DesktopDataSoftware -->
+
+    <owl:Class rdf:about="#DesktopDataSoftware">
+        <rdfs:subClassOf rdf:resource="#DesktopSoftware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#DesktopGamingSoftware -->
+
+    <owl:Class rdf:about="#DesktopGamingSoftware">
+        <rdfs:subClassOf rdf:resource="#DesktopSoftware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#DesktopInternetBrowserSoftware -->
+
+    <owl:Class rdf:about="#DesktopInternetBrowserSoftware">
+        <rdfs:subClassOf rdf:resource="#DesktopInternetSoftware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#DesktopInternetEmailSoftware -->
+
+    <owl:Class rdf:about="#DesktopInternetEmailSoftware">
+        <rdfs:subClassOf rdf:resource="#DesktopSoftware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#DesktopInternetMessengerSoftware -->
+
+    <owl:Class rdf:about="#DesktopInternetMessengerSoftware">
+        <rdfs:subClassOf rdf:resource="#DesktopInternetSoftware"/>
+        <rdfs:comment>This class describes any chat or messenger programs installed on the PC desktop.</rdfs:comment>
+        <rdfs:comment>Desktop Internet Messenger Software.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#DesktopInternetSoftware -->
+
+    <owl:Class rdf:about="#DesktopInternetSoftware">
+        <rdfs:subClassOf rdf:resource="#DesktopSoftware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#DesktopMultimediaSoftware -->
+
+    <owl:Class rdf:about="#DesktopMultimediaSoftware">
+        <rdfs:subClassOf rdf:resource="#DesktopSoftware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#DesktopOfficeSoftware -->
+
+    <owl:Class rdf:about="#DesktopOfficeSoftware">
+        <rdfs:subClassOf rdf:resource="#DesktopSoftware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#DesktopSecuritySoftware -->
+
+    <owl:Class rdf:about="#DesktopSecuritySoftware">
+        <rdfs:subClassOf rdf:resource="#DesktopSoftware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#DesktopSoftware -->
+
+    <owl:Class rdf:about="#DesktopSoftware">
+        <rdfs:subClassOf rdf:resource="#Software"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#DesktopSystemSoftware -->
+
+    <owl:Class rdf:about="#DesktopSystemSoftware">
+        <rdfs:subClassOf rdf:resource="#DesktopSoftware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#Developer -->
+
+    <owl:Class rdf:about="#Developer">
+        <rdfs:subClassOf rdf:resource="#Technical"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasSkill"/>
+                <owl:someValuesFrom rdf:resource="#ProgrammingLanguage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#DotComCompany -->
+
+    <owl:Class rdf:about="#DotComCompany">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#TechCompany"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#hasProduct"/>
+                        <owl:allValuesFrom rdf:resource="#DotComProduct"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#DotComProduct -->
+
+    <owl:Class rdf:about="#DotComProduct">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#TechProduct"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#isProductOf"/>
+                        <owl:someValuesFrom rdf:resource="#DotComCompany"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#ERPCrmSoftware -->
+
+    <owl:Class rdf:about="#ERPCrmSoftware">
+        <rdfs:subClassOf rdf:resource="#EnterpriseERPSoftware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#ERPFinancialSoftware -->
+
+    <owl:Class rdf:about="#ERPFinancialSoftware">
+        <rdfs:subClassOf rdf:resource="#EnterpriseERPSoftware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#ERPHumanResourceSoftware -->
+
+    <owl:Class rdf:about="#ERPHumanResourceSoftware">
+        <rdfs:subClassOf rdf:resource="#EnterpriseERPSoftware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#ERPManufacturingSoftware -->
+
+    <owl:Class rdf:about="#ERPManufacturingSoftware">
+        <rdfs:subClassOf rdf:resource="#EnterpriseERPSoftware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#ERPSupplyChainSoftware -->
+
+    <owl:Class rdf:about="#ERPSupplyChainSoftware">
+        <rdfs:subClassOf rdf:resource="#EnterpriseERPSoftware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#EcommerceWebsite -->
+
+    <owl:Class rdf:about="#EcommerceWebsite">
+        <rdfs:label>Internet Marketplace</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Website"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#EmailInternetDesktopSoftware -->
+
+    <owl:Class rdf:about="#EmailInternetDesktopSoftware">
+        <rdfs:subClassOf rdf:resource="#DesktopInternetSoftware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#Employee -->
+
+    <owl:Class rdf:about="#Employee">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#TechPerson"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#isEmployeeOf"/>
+                        <owl:someValuesFrom rdf:resource="#TechCompany"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#Enterprise-HR-Talent-Management-Software -->
+
+    <owl:Class rdf:about="#Enterprise-HR-Talent-Management-Software">
+        <rdfs:subClassOf rdf:resource="#ERPHumanResourceSoftware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#EnterpriseDocumentImagingSoftware -->
+
+    <owl:Class rdf:about="#EnterpriseDocumentImagingSoftware">
+        <rdfs:subClassOf rdf:resource="#EnterpriseSoftware"/>
+        <rdfs:comment>This class includes document scanning, capture solutions.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#EnterpriseEDISoftware -->
+
+    <owl:Class rdf:about="#EnterpriseEDISoftware">
+        <rdfs:subClassOf rdf:resource="#EnterpriseSoftware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#EnterpriseERPSoftware -->
+
+    <owl:Class rdf:about="#EnterpriseERPSoftware">
+        <rdfs:subClassOf rdf:resource="#EnterpriseSoftware"/>
+        <rdfs:comment>Enterprise Resource Planning Software</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#EnterpriseLearningManagementSoftware -->
+
+    <owl:Class rdf:about="#EnterpriseLearningManagementSoftware">
+        <rdfs:subClassOf rdf:resource="#EnterpriseSoftware"/>
+        <rdfs:comment>Enterprise Learning Management Software</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#EnterpriseServerMiddlewareSoftware -->
+
+    <owl:Class rdf:about="#EnterpriseServerMiddlewareSoftware">
+        <rdfs:subClassOf rdf:resource="#EnterpriseServerSoftware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#EnterpriseServerSoftware -->
+
+    <owl:Class rdf:about="#EnterpriseServerSoftware">
+        <rdfs:subClassOf rdf:resource="#EnterpriseSoftware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#EnterpriseSoftware -->
+
+    <owl:Class rdf:about="#EnterpriseSoftware">
+        <rdfs:subClassOf rdf:resource="#Software"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#EntertainmentPortalWebsite -->
+
+    <owl:Class rdf:about="#EntertainmentPortalWebsite">
+        <rdfs:label>Entertainment Web Portal</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#PortalWebsite"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#Executive -->
+
+    <owl:Class rdf:about="#Executive">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#TechPerson"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#isExecutiveOf"/>
+                        <owl:someValuesFrom rdf:resource="#TechCompany"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#FirewallSecurityDesktopSoftware -->
+
+    <owl:Class rdf:about="#FirewallSecurityDesktopSoftware">
+        <rdfs:subClassOf rdf:resource="#DesktopSecuritySoftware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#Functional -->
+
+    <owl:Class rdf:about="#Functional">
+        <rdfs:subClassOf rdf:resource="#Employee"/>
+        <owl:disjointWith rdf:resource="#Technical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#GamblingEcommerceWebsite -->
+
+    <owl:Class rdf:about="#GamblingEcommerceWebsite">
+        <rdfs:subClassOf rdf:resource="#EcommerceWebsite"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#Hardware -->
+
+    <owl:Class rdf:about="#Hardware">
+        <rdfs:subClassOf rdf:resource="#TechNiche"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#HardwareCompany -->
+
+    <owl:Class rdf:about="#HardwareCompany">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#TechCompany"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#hasProduct"/>
+                        <owl:allValuesFrom rdf:resource="#HardwareProduct"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#HardwareProduct -->
+
+    <owl:Class rdf:about="#HardwareProduct">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#TechProduct"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#isProductOf"/>
+                        <owl:someValuesFrom rdf:resource="#HardwareCompany"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#Hotbed -->
+
+    <owl:Class rdf:about="#Hotbed">
+        <rdfs:subClassOf rdf:resource="#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#ITManager -->
+
+    <owl:Class rdf:about="#ITManager">
+        <rdfs:subClassOf rdf:resource="#Functional"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#isCompanyContactOf"/>
+                <owl:someValuesFrom rdf:resource="#TechRecruiter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#InHub -->
+
+    <owl:Class rdf:about="#InHub">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#TalentHub"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#hasInHub"/>
+                        <owl:someValuesFrom rdf:resource="#InHub"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#Industry -->
+
+    <owl:Class rdf:about="#Industry">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#IndustryPortalWebsite -->
+
+    <owl:Class rdf:about="#IndustryPortalWebsite">
+        <rdfs:label>Information Web Portal</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#PortalWebsite"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#IndustryTrainingBusinessWebsite -->
+
+    <owl:Class rdf:about="#IndustryTrainingBusinessWebsite">
+        <rdfs:subClassOf rdf:resource="#BusinessWebsite"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#Internet-Cloud-Software -->
+
+    <owl:Class rdf:about="#Internet-Cloud-Software">
+        <rdfs:subClassOf rdf:resource="#InternetSoftware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#InternetRadioSocialNetworkWebsite -->
+
+    <owl:Class rdf:about="#InternetRadioSocialNetworkWebsite">
+        <rdfs:subClassOf rdf:resource="#SocialNetworkWebsite"/>
+        <rdfs:comment>Internet Radio Wesite</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#InternetSoftware -->
+
+    <owl:Class rdf:about="#InternetSoftware">
+        <rdfs:subClassOf rdf:resource="#Software"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#LeadExchangeNetworkBusinessWebsite -->
+
+    <owl:Class rdf:about="#LeadExchangeNetworkBusinessWebsite">
+        <rdfs:label>Business Lead Exchange Website</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#BusinessWebsite"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#Location -->
+
+    <owl:Class rdf:about="#Location">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#isLocationOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>The main container for an ITTAGS Technology Location reference. A Technology Location can be referenced by ITTAGS class.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#MediaSharingSocialNetworkWebsite -->
+
+    <owl:Class rdf:about="#MediaSharingSocialNetworkWebsite">
+        <rdfs:subClassOf rdf:resource="#SocialNetworkWebsite"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#MetroArea -->
+
+    <owl:Class rdf:about="#MetroArea">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#Location"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#isMetroAreaOf"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#MobileContentDeliveryNetwork -->
+
+    <owl:Class rdf:about="#MobileContentDeliveryNetwork">
+        <rdfs:subClassOf rdf:resource="#Content-Delivery-Network"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#Multimedia-Audio-Hardware -->
+
+    <owl:Class rdf:about="#Multimedia-Audio-Hardware">
+        <rdfs:subClassOf rdf:resource="#Multimedia-Hardware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#Multimedia-Hardware -->
+
+    <owl:Class rdf:about="#Multimedia-Hardware">
+        <rdfs:subClassOf rdf:resource="#Hardware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#Multimedia-Video-Hardware -->
+
+    <owl:Class rdf:about="#Multimedia-Video-Hardware">
+        <rdfs:subClassOf rdf:resource="#Multimedia-Hardware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#Name -->
+
+    <owl:Class rdf:about="#Name"/>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#Network-Hardware -->
+
+    <owl:Class rdf:about="#Network-Hardware">
+        <rdfs:subClassOf rdf:resource="#Hardware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#NewsPortalWebsite -->
+
+    <owl:Class rdf:about="#NewsPortalWebsite">
+        <rdfs:label>News Web Portal</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#PortalWebsite"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#OnlineAdvertisingMarketingServices -->
+
+    <owl:Class rdf:about="#OnlineAdvertisingMarketingServices">
+        <rdfs:subClassOf rdf:resource="#Service"/>
+        <rdfs:comment>Online Advertising and Marketing Services</rdfs:comment>
+        <rdfs:comment>Services that promote and monetize websites.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#OnlineMarketingServices -->
+
+    <owl:Class rdf:about="#OnlineMarketingServices">
+        <rdfs:subClassOf rdf:resource="#Service"/>
+        <rdfs:comment>Services that improve website visibility on the internet.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#OnlineMerchantServices -->
+
+    <owl:Class rdf:about="#OnlineMerchantServices">
+        <rdfs:label>E-commerce Merchant Services</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#PersonName -->
+
+    <owl:Class rdf:about="#PersonName">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#Name"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#isNameOf"/>
+                        <owl:allValuesFrom rdf:resource="#TechPerson"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#PersonalBlog -->
+
+    <owl:Class rdf:about="#PersonalBlog">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#Blog"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#hasAuthor"/>
+                        <owl:someValuesFrom rdf:resource="#TechPerson"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#PersonalsSocialNetworkWebsite -->
+
+    <owl:Class rdf:about="#PersonalsSocialNetworkWebsite">
+        <rdfs:subClassOf rdf:resource="#SocialNetworkWebsite"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#Personnel -->
+
+    <owl:Class rdf:about="#Personnel">
+        <rdfs:subClassOf rdf:resource="#Functional"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#isCompanyContactOf"/>
+                <owl:someValuesFrom rdf:resource="#TechRecruiter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#PortalWebsite -->
+
+    <owl:Class rdf:about="#PortalWebsite">
+        <rdfs:label>Web Portal</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Website"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#PrivateInvestor -->
+
+    <owl:Class rdf:about="#PrivateInvestor">
+        <rdfs:subClassOf rdf:resource="#TechInvestor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#ProductName -->
+
+    <owl:Class rdf:about="#ProductName">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#Name"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#isNameOf"/>
+                        <owl:allValuesFrom rdf:resource="#TechProduct"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#ProgrammingLanguage -->
+
+    <owl:Class rdf:about="#ProgrammingLanguage">
+        <rdfs:subClassOf rdf:resource="#TechSkills"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#ProjectManager -->
+
+    <owl:Class rdf:about="#ProjectManager">
+        <rdfs:subClassOf rdf:resource="#Functional"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#ReferralNetworkBusinessWebsite -->
+
+    <owl:Class rdf:about="#ReferralNetworkBusinessWebsite">
+        <rdfs:label>Business Referral Network Website</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#BusinessWebsite"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#Resume -->
+
+    <owl:Class rdf:about="#Resume"/>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#SaasBusinessProcessSoftware -->
+
+    <owl:Class rdf:about="#SaasBusinessProcessSoftware">
+        <rdfs:subClassOf rdf:resource="#SaasSoftware"/>
+        <rdfs:comment>SaaS Business Process Software</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#SaasCollaborationSoftware -->
+
+    <owl:Class rdf:about="#SaasCollaborationSoftware">
+        <rdfs:subClassOf rdf:resource="#SaasSoftware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#SaasDocumentManagementSoftware -->
+
+    <owl:Class rdf:about="#SaasDocumentManagementSoftware">
+        <rdfs:subClassOf rdf:resource="#SaasSoftware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#SaasEmailSoftware -->
+
+    <owl:Class rdf:about="#SaasEmailSoftware">
+        <rdfs:subClassOf rdf:resource="#SaasSoftware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#SaasEnterpriseHubSoftware -->
+
+    <owl:Class rdf:about="#SaasEnterpriseHubSoftware">
+        <rdfs:subClassOf rdf:resource="#SaasSoftware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#SaasFinancialSoftware -->
+
+    <owl:Class rdf:about="#SaasFinancialSoftware">
+        <rdfs:subClassOf rdf:resource="#SaasSoftware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#SaasMediaSharingSoftware -->
+
+    <owl:Class rdf:about="#SaasMediaSharingSoftware">
+        <rdfs:subClassOf rdf:resource="#SaasSoftware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#SaasMobilePlatformSoftware -->
+
+    <owl:Class rdf:about="#SaasMobilePlatformSoftware">
+        <rdfs:subClassOf rdf:resource="#SaasSoftware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#SaasOfficeInternetSoftware -->
+
+    <owl:Class rdf:about="#SaasOfficeInternetSoftware">
+        <rdfs:subClassOf rdf:resource="#SaasSoftware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#SaasProjectManagementSoftware -->
+
+    <owl:Class rdf:about="#SaasProjectManagementSoftware">
+        <rdfs:subClassOf rdf:resource="#SaasSoftware"/>
+        <rdfs:comment>Project Management SaaS Software</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#SaasReasearchSoftware -->
+
+    <owl:Class rdf:about="#SaasReasearchSoftware">
+        <rdfs:subClassOf rdf:resource="#SaasSoftware"/>
+        <rdfs:comment>SaaS software that facilitates research.</rdfs:comment>
+        <rdfs:comment>SaaS Research Software</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#SaasSecuritySoftware -->
+
+    <owl:Class rdf:about="#SaasSecuritySoftware">
+        <rdfs:subClassOf rdf:resource="#SaasSoftware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#SaasSoftware -->
+
+    <owl:Class rdf:about="#SaasSoftware">
+        <rdfs:subClassOf rdf:resource="#InternetSoftware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#SaasTalentManagementSoftware -->
+
+    <owl:Class rdf:about="#SaasTalentManagementSoftware">
+        <rdfs:subClassOf rdf:resource="#SaasSoftware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#SearchEngineWebsite -->
+
+    <owl:Class rdf:about="#SearchEngineWebsite">
+        <rdfs:label>Search Engine Website</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Website"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#SecurityEnterpriseSoftware -->
+
+    <owl:Class rdf:about="#SecurityEnterpriseSoftware">
+        <rdfs:subClassOf rdf:resource="#EnterpriseSoftware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#Service -->
+
+    <owl:Class rdf:about="#Service">
+        <rdfs:subClassOf rdf:resource="#TechNiche"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasName"/>
+                <owl:someValuesFrom rdf:resource="#Service"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#isServiceOf"/>
+                <owl:someValuesFrom rdf:resource="#TechCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>The main container for an ITTAGS Technology Service. Technology Services are provided exclusively by Technology Companies.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#ServiceProviderCompany -->
+
+    <owl:Class rdf:about="#ServiceProviderCompany">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#TechCompany"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#hasService"/>
+                        <owl:allValuesFrom rdf:resource="#Service"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="#TechCompany"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#ShopEcommerceWebsite -->
+
+    <owl:Class rdf:about="#ShopEcommerceWebsite">
+        <rdfs:subClassOf rdf:resource="#EcommerceWebsite"/>
+        <rdfs:comment>Internet e-Commerce Shop</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#SocialGroup -->
+
+    <owl:Class rdf:about="#SocialGroup">
+        <rdfs:subClassOf rdf:resource="#SocialMedia"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#TechPerson"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#isSocialGroupOf"/>
+                        <owl:someValuesFrom rdf:resource="#TechCompany"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#SocialMedia -->
+
+    <owl:Class rdf:about="#SocialMedia">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#url"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#SocialNetworkWebsite -->
+
+    <owl:Class rdf:about="#SocialNetworkWebsite">
+        <rdfs:label>Social Media Website</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Website"/>
+        <rdfs:comment>Interest group community websites.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#SocialProfile -->
+
+    <owl:Class rdf:about="#SocialProfile">
+        <rdfs:subClassOf rdf:resource="#SocialMedia"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#TechPerson"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#isSocialProfileOf"/>
+                        <owl:someValuesFrom rdf:resource="#TechCompany"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#Software -->
+
+    <owl:Class rdf:about="#Software">
+        <rdfs:subClassOf rdf:resource="#TechNiche"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#SoftwareCompany -->
+
+    <owl:Class rdf:about="#SoftwareCompany">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#TechCompany"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#hasProduct"/>
+                        <owl:allValuesFrom rdf:resource="#SoftwareProduct"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#SoftwareProduct -->
+
+    <owl:Class rdf:about="#SoftwareProduct">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#TechProduct"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#isProductOf"/>
+                        <owl:someValuesFrom rdf:resource="#SoftwareCompany"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#State -->
+
+    <owl:Class rdf:about="#State">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#Location"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#isStateOf"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#System-Software -->
+
+    <owl:Class rdf:about="#System-Software">
+        <rdfs:subClassOf rdf:resource="#Software"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#TalentHub -->
+
+    <owl:Class rdf:about="#TalentHub">
+        <rdfs:subClassOf rdf:resource="#TechCareerSite"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#TechCareerSite -->
+
+    <owl:Class rdf:about="#TechCareerSite">
+        <rdfs:subClassOf rdf:resource="#TechResource"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#url"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#TechCompany -->
+
+    <owl:Class rdf:about="#TechCompany">
+        <rdfs:subClassOf rdf:resource="#TechResource"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasEmployee"/>
+                <owl:someValuesFrom rdf:resource="#Functional"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#inPostalCode"/>
+                <owl:someValuesFrom rdf:resource="#ZipCode"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasEmployee"/>
+                <owl:someValuesFrom rdf:resource="#Technical"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasCTO"/>
+                <owl:someValuesFrom rdf:resource="#CTO"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#inMetroArea"/>
+                <owl:someValuesFrom rdf:resource="#MetroArea"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasName"/>
+                <owl:someValuesFrom rdf:resource="#CompanyName"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#inState"/>
+                <owl:someValuesFrom rdf:resource="#State"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasNiche"/>
+                <owl:someValuesFrom rdf:resource="#TechNiche"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#hasProduct"/>
+                        <owl:someValuesFrom rdf:resource="#TechProduct"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#hasService"/>
+                        <owl:someValuesFrom rdf:resource="#Service"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasCEO"/>
+                <owl:someValuesFrom rdf:resource="#CEO"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>The main container for an ITTAGS Technology Company.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#TechConsultant -->
+
+    <owl:Class rdf:about="#TechConsultant">
+        <rdfs:subClassOf rdf:resource="#TechResource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#TechInvestor -->
+
+    <owl:Class rdf:about="#TechInvestor">
+        <rdfs:subClassOf rdf:resource="#TechResource"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#isInvestorOf"/>
+                <owl:someValuesFrom rdf:resource="#TechCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#TechJob -->
+
+    <owl:Class rdf:about="#TechJob">
+        <rdfs:subClassOf rdf:resource="#TechResource"/>
+        <rdfs:comment>The main container for an ITTAGS Technology Job reference. A Technology Job is offered by a Technology Company.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#TechNews -->
+
+    <owl:Class rdf:about="#TechNews">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#isNewsOf"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="#KeyClient"/>
+                            <rdf:Description rdf:about="#Patent"/>
+                            <rdf:Description rdf:about="#Sponsorship"/>
+                            <rdf:Description rdf:about="#ExecutiveMove"/>
+                            <rdf:Description rdf:about="#GoLive"/>
+                            <rdf:Description rdf:about="#Event"/>
+                            <rdf:Description rdf:about="#Recognition"/>
+                            <rdf:Description rdf:about="#Legal"/>
+                            <rdf:Description rdf:about="#Restructure"/>
+                            <rdf:Description rdf:about="#ProductRelease"/>
+                            <rdf:Description rdf:about="#FinancialReport"/>
+                            <rdf:Description rdf:about="#Sales"/>
+                            <rdf:Description rdf:about="#Expansion"/>
+                            <rdf:Description rdf:about="#Research"/>
+                            <rdf:Description rdf:about="#Partnership"/>
+                            <rdf:Description rdf:about="#AdvisoryBoard"/>
+                            <rdf:Description rdf:about="#NewFeature"/>
+                            <rdf:Description rdf:about="#Growth"/>
+                            <rdf:Description rdf:about="#Acquisition"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="#TechResource"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasTitle"/>
+                <owl:allValuesFrom rdf:resource="#TechNews"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasStory"/>
+                <owl:allValuesFrom rdf:resource="#TechNews"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#inCity"/>
+                <owl:someValuesFrom rdf:resource="#City"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#inState"/>
+                <owl:someValuesFrom rdf:resource="#State"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#inMetroArea"/>
+                <owl:someValuesFrom rdf:resource="#MetroArea"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#aboutCompany"/>
+                        <owl:allValuesFrom rdf:resource="#TechCompany"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#aboutExecutive"/>
+                        <owl:allValuesFrom rdf:resource="#Executive"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#aboutNiche"/>
+                        <owl:allValuesFrom rdf:resource="#TechNiche"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#aboutProduct"/>
+                        <owl:allValuesFrom rdf:resource="#TechProduct"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment>The main container for an ITTAGS Technology News story. A Technology News story is about any Technology Company, Technology Person or Technology Product. All news stories are classified by a Technology News subclass.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#TechNiche -->
+
+    <owl:Class rdf:about="#TechNiche">
+        <rdfs:subClassOf rdf:resource="#TechResource"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#TechPerson"/>
+                    <rdf:Description rdf:about="#TechProduct"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#isNicheOf"/>
+                        <owl:someValuesFrom rdf:resource="#TechCompany"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment>A Technology Niche is ITTAGS core classification systems for Technology Companies and Technology Products. A niche is a narrow area of specialization. In addition, a Technology Niche is also used to classify a Technical Person's skills and experience.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#TechPerson -->
+
+    <owl:Class rdf:about="#TechPerson">
+        <rdfs:subClassOf rdf:resource="#TechResource"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasNiche"/>
+                <owl:someValuesFrom rdf:resource="#TechNiche"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasName"/>
+                <owl:someValuesFrom rdf:resource="#TechPerson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasSocialProfile"/>
+                <owl:someValuesFrom rdf:resource="#SocialProfile"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasLocation"/>
+                <owl:someValuesFrom rdf:resource="#MetroArea"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>The main container for an ITTAGS Technology Person profile. A Technology Person is any Board Member, Executive, Employee or Investor of a Technology Company.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#TechProduct -->
+
+    <owl:Class rdf:about="#TechProduct">
+        <rdfs:subClassOf rdf:resource="#TechResource"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasNiche"/>
+                <owl:someValuesFrom rdf:resource="#TechNiche"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasName"/>
+                <owl:someValuesFrom rdf:resource="#TechProduct"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>The main container for an ITTAGS Technology Product. Technology Products are provided exclusively by Technology Companies.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#TechRecruiter -->
+
+    <owl:Class rdf:about="#TechRecruiter">
+        <rdfs:subClassOf rdf:resource="#TechResource"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasClient"/>
+                <owl:someValuesFrom rdf:resource="#TechCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasName"/>
+                <owl:someValuesFrom rdf:resource="#TechRecruiter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#hasCompanyContact"/>
+                        <owl:someValuesFrom rdf:resource="#ITManager"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#hasCompanyContact"/>
+                        <owl:someValuesFrom rdf:resource="#Personnel"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#TechResource -->
+
+    <owl:Class rdf:about="#TechResource"/>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#TechResume -->
+
+    <owl:Class rdf:about="#TechResume">
+        <rdfs:subClassOf rdf:resource="#TechResource"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#isResumeOf"/>
+                <owl:someValuesFrom rdf:resource="#TechPerson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasFirstName"/>
+                <owl:someValuesFrom rdf:resource="#TechPerson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasLastName"/>
+                <owl:someValuesFrom rdf:resource="#TechPerson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>The main container for an ITTAGS Technology Resume. A Technology Resume is always associated with a Technology Person.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#TechSkills -->
+
+    <owl:Class rdf:about="#TechSkills">
+        <rdfs:subClassOf rdf:resource="#TechResource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#Technical -->
+
+    <owl:Class rdf:about="#Technical">
+        <rdfs:subClassOf rdf:resource="#Employee"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasSkill"/>
+                <owl:someValuesFrom rdf:resource="#TechSkills"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#TechnicalSupport -->
+
+    <owl:Class rdf:about="#TechnicalSupport">
+        <rdfs:subClassOf rdf:resource="#Technical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#Telephony-VoIP-Service -->
+
+    <owl:Class rdf:about="#Telephony-VoIP-Service">
+        <rdfs:subClassOf rdf:resource="#Service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#VentureFirm -->
+
+    <owl:Class rdf:about="#VentureFirm">
+        <rdfs:subClassOf rdf:resource="#TechInvestor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#VerticalMarket -->
+
+    <owl:Class rdf:about="#VerticalMarket">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#Web-Hosting-Email-Service -->
+
+    <owl:Class rdf:about="#Web-Hosting-Email-Service">
+        <rdfs:subClassOf rdf:resource="#Web-Hosting-Service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#Web-Hosting-Music-Sharing-Service -->
+
+    <owl:Class rdf:about="#Web-Hosting-Music-Sharing-Service">
+        <rdfs:subClassOf rdf:resource="#Web-Hosting-Service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#Web-Hosting-Photo-Sharing-Service -->
+
+    <owl:Class rdf:about="#Web-Hosting-Photo-Sharing-Service">
+        <rdfs:subClassOf rdf:resource="#Web-Hosting-Service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#Web-Hosting-Service -->
+
+    <owl:Class rdf:about="#Web-Hosting-Service">
+        <rdfs:subClassOf rdf:resource="#Service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#Web-Hosting-Video-Sharing-Service -->
+
+    <owl:Class rdf:about="#Web-Hosting-Video-Sharing-Service">
+        <rdfs:subClassOf rdf:resource="#Web-Hosting-Service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#Web-Marketing-Search-Engine-Optimization-Service -->
+
+    <owl:Class rdf:about="#Web-Marketing-Search-Engine-Optimization-Service">
+        <rdfs:subClassOf rdf:resource="#OnlineMarketingServices"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#WebAdvertisingOptimizationService -->
+
+    <owl:Class rdf:about="#WebAdvertisingOptimizationService">
+        <rdfs:subClassOf rdf:resource="#OnlineAdvertisingMarketingServices"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#WebcastSocialNetworkWebsite -->
+
+    <owl:Class rdf:about="#WebcastSocialNetworkWebsite">
+        <rdfs:label>Podcast Website</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#SocialNetworkWebsite"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#Website -->
+
+    <owl:Class rdf:about="#Website">
+        <rdfs:subClassOf rdf:resource="#TechNiche"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#WikiPortalWebsite -->
+
+    <owl:Class rdf:about="#WikiPortalWebsite">
+        <rdfs:label>Wiki Web Portal</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#PortalWebsite"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#ZipCode -->
+
+    <owl:Class rdf:about="#ZipCode">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#Location"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#isZipCodeOf"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#Acquisition -->
+
+    <owl:Thing rdf:about="#Acquisition"/>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#AdvisoryBoard -->
+
+    <owl:Thing rdf:about="#AdvisoryBoard"/>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#Event -->
+
+    <owl:Thing rdf:about="#Event"/>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#ExecutiveMove -->
+
+    <owl:Thing rdf:about="#ExecutiveMove"/>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#Expansion -->
+
+    <owl:Thing rdf:about="#Expansion"/>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#Facebook -->
+
+    <owl:Thing rdf:about="#Facebook">
+        <hasSocialProfile rdf:resource="#Facebook"/>
+        <hasSocialGroup rdf:resource="#Facebook"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#FinancialReport -->
+
+    <owl:Thing rdf:about="#FinancialReport"/>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#GoLive -->
+
+    <owl:Thing rdf:about="#GoLive"/>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#Growth -->
+
+    <owl:Thing rdf:about="#Growth"/>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#KeyClient -->
+
+    <owl:Thing rdf:about="#KeyClient"/>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#Legal -->
+
+    <owl:Thing rdf:about="#Legal"/>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#LinkedIn -->
+
+    <owl:Thing rdf:about="#LinkedIn">
+        <hasSocialProfile rdf:resource="#LinkedIn"/>
+        <hasSocialGroup rdf:resource="#LinkedIn"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#NewFeature -->
+
+    <owl:Thing rdf:about="#NewFeature"/>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#Partnership -->
+
+    <owl:Thing rdf:about="#Partnership"/>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#Patent -->
+
+    <owl:Thing rdf:about="#Patent"/>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#ProductRelease -->
+
+    <owl:Thing rdf:about="#ProductRelease"/>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#Recognition -->
+
+    <owl:Thing rdf:about="#Recognition"/>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#Research -->
+
+    <owl:Thing rdf:about="#Research"/>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#Restructure -->
+
+    <owl:Thing rdf:about="#Restructure"/>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#Sales -->
+
+    <owl:Thing rdf:about="#Sales"/>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#Spoke -->
+
+    <owl:Thing rdf:about="#Spoke">
+        <hasSocialProfile rdf:resource="#Spoke"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#Sponsorship -->
+
+    <owl:Thing rdf:about="#Sponsorship"/>
+    
+
+
+    <!-- http://www.ittags.com/ontology/ittags.owl#Twitter -->
+
+    <owl:Thing rdf:about="#Twitter">
+        <hasSocialProfile rdf:resource="#Twitter"/>
+    </owl:Thing>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="#Hardware"/>
+            <rdf:Description rdf:about="#Software"/>
+            <rdf:Description rdf:about="#Website"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="#CompanyName"/>
+            <rdf:Description rdf:about="#PersonName"/>
+            <rdf:Description rdf:about="#ProductName"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="#City"/>
+            <rdf:Description rdf:about="#MetroArea"/>
+            <rdf:Description rdf:about="#State"/>
+            <rdf:Description rdf:about="#ZipCode"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="#DesktopSoftware"/>
+            <rdf:Description rdf:about="#EnterpriseSoftware"/>
+            <rdf:Description rdf:about="#InternetSoftware"/>
+            <rdf:Description rdf:about="#System-Software"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="#Blog"/>
+            <rdf:Description rdf:about="#SocialGroup"/>
+            <rdf:Description rdf:about="#SocialProfile"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+<!-- Generated by the OWL API (version 2.2.1.1138) http://owlapi.sourceforge.net -->

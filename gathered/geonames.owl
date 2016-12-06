@@ -1,0 +1,311 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#"
+     xml:base="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#childrenFeatures -->
+
+    <owl:ObjectProperty rdf:about="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#childrenFeatures">
+        <rdfs:domain rdf:resource="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#Feature"/>
+        <rdfs:range rdf:resource="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#RDFData"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#featureClass -->
+
+    <owl:ObjectProperty rdf:about="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#featureClass">
+        <rdfs:subPropertyOf rdf:resource="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#subject"/>
+        <rdfs:domain rdf:resource="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#Feature"/>
+        <rdfs:range rdf:resource="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#Class"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#featureCode -->
+
+    <owl:ObjectProperty rdf:about="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#featureCode">
+        <rdfs:subPropertyOf rdf:resource="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#subject"/>
+        <rdfs:domain rdf:resource="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#Feature"/>
+        <rdfs:range rdf:resource="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#Code"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#inCountry -->
+
+    <owl:ObjectProperty rdf:about="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#inCountry">
+        <rdfs:domain rdf:resource="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#Feature"/>
+        <rdfs:range rdf:resource="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#Country"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#locatedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#locatedIn">
+        <rdfs:range rdf:resource="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#Feature"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#locationMap -->
+
+    <owl:ObjectProperty rdf:about="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#locationMap">
+        <rdfs:domain rdf:resource="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#Feature"/>
+        <rdfs:range rdf:resource="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#Map"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#nearby -->
+
+    <owl:ObjectProperty rdf:about="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#nearby">
+        <rdfs:domain rdf:resource="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#Feature"/>
+        <rdfs:range rdf:resource="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#Feature"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#nearbyFeatures -->
+
+    <owl:ObjectProperty rdf:about="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#nearbyFeatures">
+        <rdfs:domain rdf:resource="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#Feature"/>
+        <rdfs:range rdf:resource="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#RDFData"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#neighbour -->
+
+    <owl:ObjectProperty rdf:about="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#neighbour">
+        <rdfs:domain rdf:resource="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#Feature"/>
+        <rdfs:range rdf:resource="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#Feature"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#neighbouringFeatures -->
+
+    <owl:ObjectProperty rdf:about="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#neighbouringFeatures">
+        <rdfs:domain rdf:resource="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#Feature"/>
+        <rdfs:range rdf:resource="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#RDFData"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#parentFeature -->
+
+    <owl:ObjectProperty rdf:about="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#parentFeature">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#Feature"/>
+        <rdfs:range rdf:resource="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#Feature"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#subject -->
+
+    <owl:ObjectProperty rdf:about="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#subject"/>
+    
+
+
+    <!-- http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#tag -->
+
+    <owl:ObjectProperty rdf:about="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#tag">
+        <rdfs:subPropertyOf rdf:resource="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#subject"/>
+        <rdfs:domain rdf:resource="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#Feature"/>
+        <rdfs:range rdf:resource="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#Concept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#wikipediaArticle -->
+
+    <owl:ObjectProperty rdf:about="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#wikipediaArticle">
+        <rdfs:domain rdf:resource="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#Feature"/>
+        <rdfs:range rdf:resource="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#WikipediaArticle"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#alternateName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#alternateName">
+        <rdfs:domain rdf:resource="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#Feature"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#definition -->
+
+    <owl:DatatypeProperty rdf:about="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#definition">
+        <rdfs:domain rdf:resource="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#Feature"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#name">
+        <rdfs:domain rdf:resource="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#Feature"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#officialName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#officialName">
+        <rdfs:domain rdf:resource="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#Feature"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#population -->
+
+    <owl:DatatypeProperty rdf:about="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#population">
+        <rdfs:domain rdf:resource="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#Feature"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#postalcode -->
+
+    <owl:DatatypeProperty rdf:about="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#postalcode">
+        <rdfs:domain rdf:resource="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#Feature"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#prefLabel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#prefLabel">
+        <rdfs:domain rdf:resource="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#Feature"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#Class -->
+
+    <owl:Class rdf:about="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#Class">
+        <rdfs:subClassOf rdf:resource="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#ConceptScheme"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A class of features.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Class</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#Code -->
+
+    <owl:Class rdf:about="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#Code">
+        <rdfs:subClassOf rdf:resource="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#Concept -->
+
+    <owl:Class rdf:about="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#Concept"/>
+    
+
+
+    <!-- http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#ConceptScheme -->
+
+    <owl:Class rdf:about="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#ConceptScheme"/>
+    
+
+
+    <!-- http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#Country -->
+
+    <owl:Class rdf:about="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#Country"/>
+    
+
+
+    <!-- http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#Document -->
+
+    <owl:Class rdf:about="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#Document"/>
+    
+
+
+    <!-- http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#Feature -->
+
+    <owl:Class rdf:about="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#Feature">
+        <rdfs:subClassOf rdf:resource="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#SpacialThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#Map -->
+
+    <owl:Class rdf:about="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#Map">
+        <rdfs:subClassOf rdf:resource="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#Document"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#RDFData -->
+
+    <owl:Class rdf:about="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#RDFData">
+        <rdfs:subClassOf rdf:resource="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#Document"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#SpacialThing -->
+
+    <owl:Class rdf:about="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#SpacialThing"/>
+    
+
+
+    <!-- http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#WikipediaArticle -->
+
+    <owl:Class rdf:about="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#WikipediaArticle">
+        <rdfs:subClassOf rdf:resource="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl#Document"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+

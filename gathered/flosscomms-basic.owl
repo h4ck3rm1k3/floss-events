@@ -1,0 +1,647 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#"
+     xml:base="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A work in Progress, by James Howison,  for an ontology for FLOSS artifacts.  It is biased towards communication venues, and isn&apos;t integrated with other relevant ontologies, like DOAP and EvoOnt.  The URL doesn&apos;t resolve as yet.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#didPerform -->
+
+    <owl:ObjectProperty rdf:about="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#didPerform">
+        <owl:inverseOf rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#performedBy"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Links Participants to the Events they performed.  Note that it is different from hasEvent, which only applies to Event containers (Project, Venues, Threads).</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#hasDocument -->
+
+    <owl:ObjectProperty rdf:about="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#hasDocument">
+        <owl:inverseOf rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#isDocumentOf"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Events are the primary holders of Documents, but the documents can also transitively belong to the containers that use hasEvent (Thread, Venue, Project).</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#hasEvent -->
+
+    <owl:ObjectProperty rdf:about="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#hasEvent">
+        <owl:inverseOf rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#isEventOf"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Links Threads, Venues and Projects to Events.  Note that Participants do not use hasEvent, they use didPerform.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#hasParticipant -->
+
+    <owl:ObjectProperty rdf:about="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#hasParticipant">
+        <owl:inverseOf rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#isParticipantIn"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This property links Containers of Events (Threads, Venues, Projects) to the Participants which performed the Events.  It is probably specified through a Role Chain or SWRL rule.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#hasPerformerIdentifier -->
+
+    <owl:ObjectProperty rdf:about="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#hasPerformerIdentifier">
+        <owl:inverseOf rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#isPerformerIdentifierOf"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A meta property for those properties that link an Event to the Identifier said to perform it.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#hasReply -->
+
+    <owl:ObjectProperty rdf:about="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#hasReply">
+        <owl:inverseOf rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#isReplyTo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#hasSenderIdentifier -->
+
+    <owl:ObjectProperty rdf:about="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#hasSenderIdentifier">
+        <rdfs:subPropertyOf rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#hasPerformerIdentifier"/>
+        <owl:inverseOf rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#isSenderIdentifierOf"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Links a CommunicativeEvent (MailingList msg, Forum msg, Tracker Comment) to the Identifier which is said to have sent the message.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#hasThread -->
+
+    <owl:ObjectProperty rdf:about="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#hasThread">
+        <owl:inverseOf rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#isThreadOf"/>
+        <rdfs:range rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#Thread"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A ThreadedVenue can have Threads, Projects can inherit this property</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#hasVenue -->
+
+    <owl:ObjectProperty rdf:about="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#hasVenue">
+        <owl:inverseOf rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#isVenueOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#isDocumentOf -->
+
+    <owl:ObjectProperty rdf:about="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#isDocumentOf">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Property linking Documents to their Events and transitively to the EventContainers (Projects, Venues, Threads).</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#isEventOf -->
+
+    <owl:ObjectProperty rdf:about="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#isEventOf">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Links Events to Event Containers (Projects, Venues, Threads).</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#isIdentifiedBy -->
+
+    <owl:ObjectProperty rdf:about="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#isIdentifiedBy">
+        <owl:inverseOf rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#isIdentifierOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Links Participants to Identifiers</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#isIdentifierOf -->
+
+    <owl:ObjectProperty rdf:about="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#isIdentifierOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Links Identifiers to Participants; This ought probably to be implemented using foaf:nick or similar.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#isParticipantIn -->
+
+    <owl:ObjectProperty rdf:about="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#isParticipantIn">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Participant performed at least one event in the Thread, Venue, Project.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#isPerformerIdentifierOf -->
+
+    <owl:ObjectProperty rdf:about="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#isPerformerIdentifierOf">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A meta property for linking an Identifier to an Event which the Identifier is associated with.  Usually this relationship would be specified from Event to Identifier, with this inverse relationship as a convenience.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#isReplyTo -->
+
+    <owl:ObjectProperty rdf:about="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#isReplyTo">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Used for CommunicationEvents that have a threaded structure (MailingList and Forums)</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#isSenderIdentifierOf -->
+
+    <owl:ObjectProperty rdf:about="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#isSenderIdentifierOf">
+        <rdfs:subPropertyOf rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#isPerformerIdentifierOf"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Links an identifier for a Sent msg (MailingList, Forum, Tracker Comment) to its Event.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#isThreadOf -->
+
+    <owl:ObjectProperty rdf:about="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#isThreadOf">
+        <rdfs:domain rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#Thread"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Links Threads to Venues.  Link can be transfered to the Project that owns the Venue.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#isVenueOf -->
+
+    <owl:ObjectProperty rdf:about="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#isVenueOf">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Links Projects to Venues</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#listsIdentifier -->
+
+    <owl:ObjectProperty rdf:about="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#listsIdentifier">
+        <owl:inverseOf rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#wasListedIn"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A DeveloperListing listsIdentifier Identifier</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#performedBy -->
+
+    <owl:ObjectProperty rdf:about="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#performedBy">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Links Events to Participants.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#wasListedIn -->
+
+    <owl:ObjectProperty rdf:about="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#wasListedIn">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Links a Developer Listing with the identifiers that it lists</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#hasBody -->
+
+    <owl:DatatypeProperty rdf:about="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#hasBody">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Body of a communication message document</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#hasContent -->
+
+    <owl:DatatypeProperty rdf:about="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#hasContent">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Used to store the content for Identifiers and Documents</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#hasSubject -->
+
+    <owl:DatatypeProperty rdf:about="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#hasSubject">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The subject of a communication document (probably should use dc:title or similar</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#Artifact -->
+
+    <owl:Class rdf:about="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#Artifact"/>
+    
+
+
+    <!-- http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#CodeRepositoryLogMessage -->
+
+    <owl:Class rdf:about="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#CodeRepositoryLogMessage">
+        <rdfs:subClassOf rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#Document"/>
+        <owl:disjointWith rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#EmailMessageContent"/>
+        <owl:disjointWith rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#ForumMessageContent"/>
+        <owl:disjointWith rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#ReleaseNotes"/>
+        <owl:disjointWith rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#TrackerCommentContent"/>
+        <owl:disjointWith rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#TrackerSubmissionSummary"/>
+    </owl:Class>
+    
+
+
+    <!-- http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#CommunicationEvent -->
+
+    <owl:Class rdf:about="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#CommunicationEvent">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#hasDocument"/>
+                <owl:someValuesFrom rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#Document"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#CommunicationVenue -->
+
+    <owl:Class rdf:about="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#CommunicationVenue">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#Venue"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#hasEvent"/>
+                        <owl:someValuesFrom rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#CommunicationEvent"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Communication venues are those whose events have Documents</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#CoreParticipant -->
+
+    <owl:Class rdf:about="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#CoreParticipant">
+        <rdfs:subClassOf rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#Participant"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#DevListedParticipant -->
+
+    <owl:Class rdf:about="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#DevListedParticipant">
+        <rdfs:subClassOf rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#Participant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#DeveloperList -->
+
+    <owl:Class rdf:about="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#DeveloperList">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#hasEvent"/>
+                <owl:someValuesFrom rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#DeveloperListing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#NamedVenue"/>
+        <owl:disjointWith rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#DiscussionForum"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A listing of developers, and their named roles.  This is an example of a Venue that is not a CommunicationVenue.  Each listing of developers is an event in this Venue.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#DeveloperListing -->
+
+    <owl:Class rdf:about="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#DeveloperListing">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#listsIdentifier"/>
+                <owl:someValuesFrom rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#Identifier"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#NamedEvent"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The listing of an individual developer in a developer List.  TODO: Model as an n-ary relation to allow different roles (ie it&apos;s a characteristic on the property linking DeveloperListing and an Identifier.  Probably this becomes a Role listing.
+
+  Clearly this needs an event_date datatype property.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#DiscussionForum -->
+
+    <owl:Class rdf:about="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#DiscussionForum">
+        <rdfs:subClassOf rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#NamedVenue"/>
+        <owl:disjointWith rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#IssueTracker"/>
+        <owl:disjointWith rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#MailingList"/>
+        <owl:disjointWith rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#ReleaseSystem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#Document -->
+
+    <owl:Class rdf:about="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#Document">
+        <rdfs:subClassOf rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#Artifact"/>
+    </owl:Class>
+    
+
+
+    <!-- http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#EmailAddressIdentifier -->
+
+    <owl:Class rdf:about="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#EmailAddressIdentifier">
+        <rdfs:subClassOf rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#Identifier"/>
+        <owl:disjointWith rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#RealNameIdentifier"/>
+        <owl:disjointWith rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#SfUserIDIdentifierIdentifier"/>
+        <owl:disjointWith rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#SfUserNameIdentifierIdentifier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#EmailMessageContent -->
+
+    <owl:Class rdf:about="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#EmailMessageContent">
+        <rdfs:subClassOf rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#Document"/>
+        <owl:disjointWith rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#ForumMessageContent"/>
+        <owl:disjointWith rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#ReleaseNotes"/>
+        <owl:disjointWith rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#TrackerCommentContent"/>
+        <owl:disjointWith rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#TrackerSubmissionSummary"/>
+    </owl:Class>
+    
+
+
+    <!-- http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#Event -->
+
+    <owl:Class rdf:about="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#Event"/>
+    
+
+
+    <!-- http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#ForumMessageContent -->
+
+    <owl:Class rdf:about="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#ForumMessageContent">
+        <rdfs:subClassOf rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#Document"/>
+        <owl:disjointWith rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#ReleaseNotes"/>
+        <owl:disjointWith rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#TrackerCommentContent"/>
+        <owl:disjointWith rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#TrackerSubmissionSummary"/>
+    </owl:Class>
+    
+
+
+    <!-- http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#ForumThread -->
+
+    <owl:Class rdf:about="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#ForumThread">
+        <rdfs:subClassOf rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#Thread"/>
+        <owl:disjointWith rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#MailingListThread"/>
+        <owl:disjointWith rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#TrackerItemThread"/>
+    </owl:Class>
+    
+
+
+    <!-- http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#Identifier -->
+
+    <owl:Class rdf:about="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#Identifier"/>
+    
+
+
+    <!-- http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#IssueTracker -->
+
+    <owl:Class rdf:about="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#IssueTracker">
+        <rdfs:subClassOf rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#NamedVenue"/>
+        <owl:disjointWith rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#MailingList"/>
+        <owl:disjointWith rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#ReleaseSystem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#MailingList -->
+
+    <owl:Class rdf:about="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#MailingList">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#Venue"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#hasEvent"/>
+                        <owl:someValuesFrom rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#MailingListEvent"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#NamedVenue"/>
+        <owl:disjointWith rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#ReleaseSystem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#MailingListEvent -->
+
+    <owl:Class rdf:about="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#MailingListEvent">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#Event"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#hasDocument"/>
+                                <owl:someValuesFrom rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#Document"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#hasSenderIdentifier"/>
+                                <owl:someValuesFrom rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#EmailAddressIdentifier"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#NamedEvent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#MailingListThread -->
+
+    <owl:Class rdf:about="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#MailingListThread">
+        <rdfs:subClassOf rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#Thread"/>
+        <owl:disjointWith rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#TrackerItemThread"/>
+    </owl:Class>
+    
+
+
+    <!-- http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#NamedEvent -->
+
+    <owl:Class rdf:about="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#NamedEvent">
+        <rdfs:subClassOf rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#NamedVenue -->
+
+    <owl:Class rdf:about="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#NamedVenue">
+        <rdfs:subClassOf rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#Venue"/>
+    </owl:Class>
+    
+
+
+    <!-- http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#Participant -->
+
+    <owl:Class rdf:about="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#Participant"/>
+    
+
+
+    <!-- http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#Project -->
+
+    <owl:Class rdf:about="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#Project"/>
+    
+
+
+    <!-- http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#RealNameIdentifier -->
+
+    <owl:Class rdf:about="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#RealNameIdentifier">
+        <rdfs:subClassOf rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#Identifier"/>
+        <owl:disjointWith rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#SfUserIDIdentifierIdentifier"/>
+        <owl:disjointWith rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#SfUserNameIdentifierIdentifier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#ReleaseNotes -->
+
+    <owl:Class rdf:about="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#ReleaseNotes">
+        <rdfs:subClassOf rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#Document"/>
+        <owl:disjointWith rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#TrackerCommentContent"/>
+        <owl:disjointWith rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#TrackerSubmissionSummary"/>
+    </owl:Class>
+    
+
+
+    <!-- http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#ReleaseSystem -->
+
+    <owl:Class rdf:about="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#ReleaseSystem">
+        <rdfs:subClassOf rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#NamedVenue"/>
+    </owl:Class>
+    
+
+
+    <!-- http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#SFAbbrevEmailAddressIdentifier -->
+
+    <owl:Class rdf:about="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#SFAbbrevEmailAddressIdentifier">
+        <rdfs:subClassOf rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#EmailAddressIdentifier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#SfUserIDIdentifierIdentifier -->
+
+    <owl:Class rdf:about="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#SfUserIDIdentifierIdentifier">
+        <rdfs:subClassOf rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#Identifier"/>
+        <owl:disjointWith rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#SfUserNameIdentifierIdentifier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#SfUserNameIdentifierIdentifier -->
+
+    <owl:Class rdf:about="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#SfUserNameIdentifierIdentifier">
+        <rdfs:subClassOf rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#Identifier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#Thread -->
+
+    <owl:Class rdf:about="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#Thread"/>
+    
+
+
+    <!-- http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#ThreadedVenue -->
+
+    <owl:Class rdf:about="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#ThreadedVenue">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#Venue"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#hasThread"/>
+                        <owl:someValuesFrom rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#Thread"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#TrackerCommentContent -->
+
+    <owl:Class rdf:about="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#TrackerCommentContent">
+        <rdfs:subClassOf rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#Document"/>
+        <owl:disjointWith rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#TrackerSubmissionSummary"/>
+    </owl:Class>
+    
+
+
+    <!-- http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#TrackerItemThread -->
+
+    <owl:Class rdf:about="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#TrackerItemThread">
+        <rdfs:subClassOf rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#Thread"/>
+    </owl:Class>
+    
+
+
+    <!-- http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#TrackerSubmissionSummary -->
+
+    <owl:Class rdf:about="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#TrackerSubmissionSummary">
+        <rdfs:subClassOf rdf:resource="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#Document"/>
+    </owl:Class>
+    
+
+
+    <!-- http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#Venue -->
+
+    <owl:Class rdf:about="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl#Venue"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+

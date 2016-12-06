@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl" uri="flosscomms-basic.owl"/>
+    <uri id="Imports Wizard Entry" name="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl" uri="geonames.owl"/>
+    <uri id="Imports Wizard Entry" name="http://xmlns.com/tshirt/" uri="http://kasei.us/2007/06/tshirt.rdf"/>
+    <uri id="Imports Wizard Entry" name="http://www.owl-ontologies.com/unnamed.owl" uri="dbworld.owl"/>
+    <uri id="Imports Wizard Entry" name="http://swat.cse.lehigh.edu/resources/onto/dblp.owl" uri="swetodlp.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1480855250530" name="http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl" uri="flosscomms-basic.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1480855250530" name="http://rdfs.org/sioc/ns" uri="gathered/foss.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1480855250530" name="duplicate:http://swat.cse.lehigh.edu/resources/onto/dblp.owl" uri="test.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1480855250530" name="duplicate:http://swat.cse.lehigh.edu/resources/onto/dblp.owl" uri="swetodlp.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1480855250530" name="http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl" uri="geonames.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1480855250530" name="http://www.ittags.com/ontology/ittags.owl" uri="ittags.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1480855250530" name="http://www.owl-ontologies.com/unnamed.owl" uri="dbworld.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1480855250530" name="http://xmlns.com/foaf/0.1/" uri="gathered/index.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1480855250530" name="http://xmlns.com/tshirt/" uri="gathered/tshirt.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1480855250530" name="shadowed:http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl" uri="gathered/flosscomms-basic.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1480855250530" name="shadowed:http://swat.cse.lehigh.edu/resources/onto/dblp.owl" uri="gathered/swetodlp.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1480855250530" name="shadowed:http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl" uri="gathered/geonames.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1480855250530" name="shadowed:http://www.owl-ontologies.com/unnamed.owl" uri="gathered/dbworld.owl"/>
+    </group>
+</catalog>
