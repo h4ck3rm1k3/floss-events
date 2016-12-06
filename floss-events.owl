@@ -5,7 +5,9 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events> a owl:Ontology .
+
+<http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events> a owl:Ontology 
+	owl:imports <http://xmlns.com/tshirt/> , <http://swrc.ontoware.org/ontology> , <http://gate.ac.uk/projects/htechsight/Employment.daml> , <http://usefulinc.com/ns/doap#> , <http://xmlns.com/wot/0.1> , <http://floss.syr.edu/ontologies/2008/flosscomms-basic.owl> , <http://purl.org/rss/1.0/modules/syndication/> , <http://swat.cse.lehigh.edu/resources/onto/dblp.owl> , <http://rdfs.org/sioc/ns#> , <http://purl.org/goodrelations/v1> , <http://www.few.vu.nl/~advhelbe/vakken/oe/geonames.owl> , <http://xmlns.com/foaf/0.1/> , <http://www.owl-ontologies.com/unnamed.owl> .
 # 
 # 
 # #################################################################
