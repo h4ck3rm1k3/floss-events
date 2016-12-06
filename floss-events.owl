@@ -1,0 +1,1917 @@
+@prefix : <http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events> a owl:Ontology .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventAccomodationProposal
+
+:EventAccomodationProposal a owl:ObjectProperty ;
+	rdfs:subPropertyOf :EventResourceProposal .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventExpressesExpertiseInTopic
+
+:EventExpressesExpertiseInTopic a owl:ObjectProperty ;
+	rdfs:subPropertyOf :EventWhatIndirectObject .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventExpressesInterestInLearning
+
+:EventExpressesInterestInLearning a owl:ObjectProperty ;
+	rdfs:subPropertyOf :EventWhatIndirectObject .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventExpressesInterestInSpeaking
+
+:EventExpressesInterestInSpeaking a owl:ObjectProperty ;
+	rdfs:subPropertyOf :EventWhatIndirectObject .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventHow
+
+:EventHow a owl:ObjectProperty ;
+	rdfs:subPropertyOf :EventProperty .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventInviteSpeaker
+
+:EventInviteSpeaker a owl:ObjectProperty ;
+	rdfs:subPropertyOf :EventWhatIndirectObject .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventLinkToAbstractOnTalk
+
+:EventLinkToAbstractOnTalk a owl:ObjectProperty ;
+	rdfs:subPropertyOf :EventWhatIndirectObject .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventMeetupProposal
+
+:EventMeetupProposal a owl:ObjectProperty ;
+	rdfs:subPropertyOf :EventResourceProposal .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventOnTopic
+
+:EventOnTopic a owl:ObjectProperty ;
+	rdfs:subPropertyOf :EventWhatIndirectObject .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventProperty
+
+:EventProperty a owl:ObjectProperty ;
+	rdfs:subPropertyOf owl:topObjectProperty ;
+	rdfs:domain :Event .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventProposesTalkOnTopic
+
+:EventProposesTalkOnTopic a owl:ObjectProperty ;
+	rdfs:subPropertyOf :EventWhatIndirectObject .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventResourceAvailable
+
+:EventResourceAvailable a owl:ObjectProperty ;
+	rdfs:subPropertyOf :EventWhatIndirectObject .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventResourceAvailableTime
+
+:EventResourceAvailableTime a owl:ObjectProperty ;
+	rdfs:subPropertyOf :EventWhatIndirectObject .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventResourceCommitted
+
+:EventResourceCommitted a owl:ObjectProperty ;
+	rdfs:subPropertyOf :EventWhatIndirectObject .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventResourceConsumer
+
+:EventResourceConsumer a owl:ObjectProperty ;
+	rdfs:subPropertyOf :EventWhatIndirectObject .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventResourceNeeded
+
+:EventResourceNeeded a owl:ObjectProperty ;
+	rdfs:subPropertyOf :EventWhatIndirectObject .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventResourceNotAvailableTime
+
+:EventResourceNotAvailableTime a owl:ObjectProperty ;
+	rdfs:subPropertyOf :EventWhatIndirectObject .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventResourceProposal
+
+:EventResourceProposal a owl:ObjectProperty ;
+	rdfs:subPropertyOf :EventWhatIndirectObject .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventResourceProvider
+
+:EventResourceProvider a owl:ObjectProperty ;
+	rdfs:subPropertyOf :EventWhatIndirectObject .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventScheduleProposal
+
+:EventScheduleProposal a owl:ObjectProperty ;
+	rdfs:subPropertyOf :EventWhatIndirectObject .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventScheduleRequirements
+
+:EventScheduleRequirements a owl:ObjectProperty ;
+	rdfs:subPropertyOf :EventWhatIndirectObject .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventScheduleVote
+
+:EventScheduleVote a owl:ObjectProperty ;
+	rdfs:subPropertyOf :EventWhatIndirectObject .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventSpeakerAvailablePlace
+
+:EventSpeakerAvailablePlace a owl:ObjectProperty ;
+	rdfs:subPropertyOf :EventWhatIndirectObject .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventSpeakerAvailableTime
+
+:EventSpeakerAvailableTime a owl:ObjectProperty ;
+	rdfs:subPropertyOf :EventWhatIndirectObject .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventSpeakerNotAvailableTime
+
+:EventSpeakerNotAvailableTime a owl:ObjectProperty ;
+	rdfs:subPropertyOf :EventWhatIndirectObject .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventSpeakerProposal
+
+:EventSpeakerProposal a owl:ObjectProperty ;
+	rdfs:subPropertyOf :EventResourceProposal .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventSponsor
+
+:EventSponsor a owl:ObjectProperty ;
+	rdfs:subPropertyOf :EventWho .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventSponsorCompany
+
+:EventSponsorCompany a owl:ObjectProperty ;
+	rdfs:subPropertyOf :EventSponsor .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventSponsorGovernment
+
+:EventSponsorGovernment a owl:ObjectProperty ;
+	rdfs:subPropertyOf :EventSponsor .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventSponsorProposal
+
+:EventSponsorProposal a owl:ObjectProperty ;
+	rdfs:subPropertyOf :EventResourceProposal .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventTalkBlogPost
+
+:EventTalkBlogPost a owl:ObjectProperty ;
+	rdfs:subPropertyOf :EventWhatIndirectObject .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventTalkCodePost
+
+:EventTalkCodePost a owl:ObjectProperty ;
+	rdfs:subPropertyOf :EventWhatIndirectObject .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventTalkCommentPost
+
+:EventTalkCommentPost a owl:ObjectProperty ;
+	rdfs:subPropertyOf :EventWhatIndirectObject .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventTalkIssuePost
+
+:EventTalkIssuePost a owl:ObjectProperty ;
+	rdfs:subPropertyOf :EventWhatIndirectObject .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventTalkMediaPost
+
+:EventTalkMediaPost a owl:ObjectProperty ;
+	rdfs:subPropertyOf :EventWhatIndirectObject .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventTalkQuestionPost
+
+:EventTalkQuestionPost a owl:ObjectProperty ;
+	rdfs:subPropertyOf :EventWhatIndirectObject .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventTalkSocialPost
+
+:EventTalkSocialPost a owl:ObjectProperty ;
+	rdfs:subPropertyOf :EventWhatIndirectObject .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventToWhom
+
+:EventToWhom a owl:ObjectProperty ;
+	rdfs:subPropertyOf :EventProperty .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventTopicProposal
+
+:EventTopicProposal a owl:ObjectProperty ;
+	rdfs:subPropertyOf :EventResourceProposal .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventTravelProposal
+
+:EventTravelProposal a owl:ObjectProperty ;
+	rdfs:subPropertyOf :EventResourceProposal .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventTravelResource
+
+:EventTravelResource a owl:ObjectProperty ;
+	rdfs:subPropertyOf :EventWhatIndirectObject .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventUser
+
+:EventUser a owl:ObjectProperty ;
+	rdfs:subPropertyOf :EventWho .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventUserStudent
+
+:EventUserStudent a owl:ObjectProperty ;
+	rdfs:subPropertyOf :EventUser .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventVenue
+
+:EventVenue a owl:ObjectProperty ;
+	rdfs:subPropertyOf :EventWhere ;
+	rdfs:domain :Conference , :LearningEvent .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventVenueAvailablePlace
+
+:EventVenueAvailablePlace a owl:ObjectProperty ;
+	rdfs:subPropertyOf :EventWhatIndirectObject .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventVenueAvailableTime
+
+:EventVenueAvailableTime a owl:ObjectProperty ;
+	rdfs:subPropertyOf :EventWhatIndirectObject .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventVenueNotAvailableTime
+
+:EventVenueNotAvailableTime a owl:ObjectProperty ;
+	rdfs:subPropertyOf :EventWhatIndirectObject .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventVenueProposal
+
+:EventVenueProposal a owl:ObjectProperty ;
+	rdfs:subPropertyOf :EventResourceProposal .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventWhat
+
+:EventWhat a owl:ObjectProperty ;
+	rdfs:subPropertyOf :EventProperty .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventWhatDirectObject
+
+:EventWhatDirectObject a owl:ObjectProperty ;
+	rdfs:subPropertyOf :EventWhat .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventWhatIndirectObject
+
+:EventWhatIndirectObject a owl:ObjectProperty ;
+	rdfs:subPropertyOf :EventWhat .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventWhatRelatedEvent
+
+:EventWhatRelatedEvent a owl:ObjectProperty ;
+	rdfs:subPropertyOf :EventWhatDirectObject .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventWhatRelatedMedia
+
+:EventWhatRelatedMedia a owl:ObjectProperty ;
+	rdfs:subPropertyOf :EventWhatDirectObject .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventWhen
+
+:EventWhen a owl:ObjectProperty ;
+	rdfs:subPropertyOf :EventProperty .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventWhenFrom
+
+:EventWhenFrom a owl:ObjectProperty ;
+	rdfs:subPropertyOf :EventWhen .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventWhenTo
+
+:EventWhenTo a owl:ObjectProperty ;
+	rdfs:subPropertyOf :EventWhen .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventWhere
+
+:EventWhere a owl:ObjectProperty ;
+	rdfs:subPropertyOf :EventProperty .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventWherePaymentIsMade
+
+:EventWherePaymentIsMade a owl:ObjectProperty ;
+	rdfs:subPropertyOf :EventWhere .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventWho
+
+:EventWho a owl:ObjectProperty ;
+	rdfs:subPropertyOf :EventProperty .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventWhoAttendee
+
+:EventWhoAttendee a owl:ObjectProperty ;
+	rdfs:subPropertyOf :EventWho .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventWhoContact
+
+:EventWhoContact a owl:ObjectProperty ;
+	rdfs:subPropertyOf :EventWho .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventWhoContactApprover
+
+:EventWhoContactApprover a owl:ObjectProperty ;
+	rdfs:subPropertyOf :EventWho .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventWhoContactRepresentative
+
+:EventWhoContactRepresentative a owl:ObjectProperty ;
+	rdfs:subPropertyOf :EventWho .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventWhomRecievesPayment
+
+:EventWhomRecievesPayment a owl:ObjectProperty ;
+	rdfs:subPropertyOf :EventWhatIndirectObject .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventWhy
+
+:EventWhy a owl:ObjectProperty ;
+	rdfs:subPropertyOf :EventProperty .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#WhoAuthorisesPayment
+
+:WhoAuthorisesPayment a owl:ObjectProperty ;
+	rdfs:subPropertyOf :EventWho .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#needs
+
+:needs a owl:ObjectProperty ;
+	rdfs:subPropertyOf :wants .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#wants
+
+:wants a owl:ObjectProperty ;
+	rdfs:subPropertyOf owl:topObjectProperty ;
+	rdfs:domain :Agent .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#DifficultyLevel
+
+:DifficultyLevel a owl:DatatypeProperty ;
+	rdfs:subPropertyOf owl:topDataProperty .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#DoNoTrack
+
+:DoNoTrack a owl:DatatypeProperty ;
+	rdfs:subPropertyOf owl:topDataProperty .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventContactPhone
+
+:EventContactPhone a owl:DatatypeProperty ;
+	rdfs:subPropertyOf :EventDPWho .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventDPHow
+
+:EventDPHow a owl:DatatypeProperty ;
+	rdfs:subPropertyOf :EventDataProperty .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventDPToWho
+
+:EventDPToWho a owl:DatatypeProperty ;
+	rdfs:subPropertyOf :EventDataProperty .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventDPWhat
+
+:EventDPWhat a owl:DatatypeProperty ;
+	rdfs:subPropertyOf :EventDataProperty .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventDPWhen
+
+:EventDPWhen a owl:DatatypeProperty ;
+	rdfs:subPropertyOf :EventDataProperty .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventDPWhere
+
+:EventDPWhere a owl:DatatypeProperty ;
+	rdfs:subPropertyOf :EventDataProperty .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventDPWhereLat
+
+:EventDPWhereLat a owl:DatatypeProperty ;
+	rdfs:subPropertyOf :EventDPWhere .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventDPWhereLon
+
+:EventDPWhereLon a owl:DatatypeProperty ;
+	rdfs:subPropertyOf :EventDPWhere .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventDPWho
+
+:EventDPWho a owl:DatatypeProperty ;
+	rdfs:subPropertyOf :EventDataProperty .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventDPWhy
+
+:EventDPWhy a owl:DatatypeProperty ;
+	rdfs:subPropertyOf :EventDataProperty .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventDataProperty
+
+:EventDataProperty a owl:DatatypeProperty ;
+	rdfs:subPropertyOf owl:topDataProperty ;
+	rdfs:domain :Event .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#FacebookLink
+
+:FacebookLink a owl:DatatypeProperty ;
+	rdfs:subPropertyOf :SocialLink .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#FavoriteEvent
+
+:FavoriteEvent a owl:DatatypeProperty ;
+	rdfs:subPropertyOf :EventDPWhat .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#LanyardLink
+
+:LanyardLink a owl:DatatypeProperty ;
+	rdfs:subPropertyOf :SocialLink .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#LinkedInLink
+
+:LinkedInLink a owl:DatatypeProperty ;
+	rdfs:subPropertyOf :SocialLink .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#RankingEvent
+
+:RankingEvent a owl:DatatypeProperty ;
+	rdfs:subPropertyOf :EventDPWhat .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#RateingEvent
+
+:RateingEvent a owl:DatatypeProperty ;
+	rdfs:subPropertyOf :EventDPWhat .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#ShareingEvent
+
+:ShareingEvent a owl:DatatypeProperty ;
+	rdfs:subPropertyOf :EventDPWhat .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#SocialLink
+
+:SocialLink a owl:DatatypeProperty ;
+	rdfs:subPropertyOf owl:topDataProperty .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#TwitterLink
+
+:TwitterLink a owl:DatatypeProperty ;
+	rdfs:subPropertyOf :SocialLink .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#AbstractDocument
+
+:AbstractDocument a owl:Class .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#AbstractMembershipDocument
+
+:AbstractMembershipDocument a owl:Class ;
+	rdfs:subClassOf :AbstractDocument .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Accessibility
+
+:Accessibility a owl:Class ;
+	rdfs:subClassOf :UserInterface .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Activity
+
+:Activity a owl:Class ;
+	rdfs:subClassOf :Process .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#AdvertiserRole
+
+:AdvertiserRole a owl:Class ;
+	rdfs:subClassOf :Role .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#AdvertisingAgency
+
+:AdvertisingAgency a owl:Class ;
+	rdfs:subClassOf :CommercialCompany .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Agent
+
+:Agent a owl:Class .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Airline
+
+:Airline a owl:Class ;
+	rdfs:subClassOf :TransportationAgency .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Airplane
+
+:Airplane a owl:Class ;
+	rdfs:subClassOf :Vehicle .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#ApplicationForJoining
+
+:ApplicationForJoining a owl:Class ;
+	rdfs:subClassOf :CommunicationsEvent .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#ArchiverRole
+
+:ArchiverRole a owl:Class ;
+	rdfs:subClassOf :Role .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Audio
+
+:Audio a owl:Class ;
+	rdfs:subClassOf :Media .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Authentification
+
+:Authentification a owl:Class ;
+	rdfs:subClassOf :Certification .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Banner
+
+:Banner a owl:Class ;
+	rdfs:subClassOf :Swag .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#BazaarRepository
+
+:BazaarRepository a owl:Class ;
+	rdfs:subClassOf :SoftwareRepository .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Book
+
+:Book a owl:Class ;
+	rdfs:subClassOf :PhysicalDocument .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#BoothSession
+
+:BoothSession a owl:Class ;
+	rdfs:subClassOf :LearningEvent .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Brand
+
+:Brand a owl:Class ;
+	rdfs:subClassOf :AbstractDocument .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#BrandRecognition
+
+:BrandRecognition a owl:Class ;
+	rdfs:subClassOf :MentalResource .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#BrowseActivity
+
+:BrowseActivity a owl:Class ;
+	rdfs:subClassOf :Activity .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#BugReportingRole
+
+:BugReportingRole a owl:Class ;
+	rdfs:subClassOf :SoftwareRole .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Building
+
+:Building a owl:Class ;
+	rdfs:subClassOf :PhysicalLocation .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Bus
+
+:Bus a owl:Class ;
+	rdfs:subClassOf :Vehicle .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#BusCompany
+
+:BusCompany a owl:Class ;
+	rdfs:subClassOf :TransportationAgency .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#BusPlan
+
+:BusPlan a owl:Class ;
+	rdfs:subClassOf :Map .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#BusinessIncubator
+
+:BusinessIncubator a owl:Class ;
+	rdfs:subClassOf :CommercialCompany .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#CDRom
+
+:CDRom a owl:Class ;
+	rdfs:subClassOf :Swag .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#CPlusPlusModel
+
+:CPlusPlusModel a owl:Class ;
+	rdfs:subClassOf :DataModel .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#CSSCodingRole
+
+:CSSCodingRole a owl:Class ;
+	rdfs:subClassOf :CoderRole .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#CSVModel
+
+:CSVModel a owl:Class ;
+	rdfs:subClassOf :DataModel .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#CV
+
+:CV a owl:Class ;
+	rdfs:subClassOf :AbstractDocument .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#CallFor
+
+:CallFor a owl:Class ;
+	rdfs:subClassOf :CommunicationsEvent .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#CallForDemos
+
+:CallForDemos a owl:Class ;
+	rdfs:subClassOf :CallFor .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#CallForExhibits
+
+:CallForExhibits a owl:Class ;
+	rdfs:subClassOf :CallFor .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#CallForPapers
+
+:CallForPapers a owl:Class ;
+	rdfs:subClassOf :CallFor .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#CallForParticipation
+
+:CallForParticipation a owl:Class ;
+	rdfs:subClassOf :CallFor .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#CallForSponsors
+
+:CallForSponsors a owl:Class ;
+	rdfs:subClassOf :CallFor .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#CallForTestamonials
+
+:CallForTestamonials a owl:Class ;
+	rdfs:subClassOf :CallFor .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#CallForVenues
+
+:CallForVenues a owl:Class ;
+	rdfs:subClassOf :CallFor .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#CallForVideos
+
+:CallForVideos a owl:Class ;
+	rdfs:subClassOf :CallFor .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Campus
+
+:Campus a owl:Class ;
+	rdfs:subClassOf :PhysicalLocation .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Car
+
+:Car a owl:Class ;
+	rdfs:subClassOf :Vehicle .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#CategorizationActivity
+
+:CategorizationActivity a owl:Class ;
+	rdfs:subClassOf :Activity .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Certification
+
+:Certification a owl:Class ;
+	rdfs:subClassOf :Rights .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#CheckInList
+
+:CheckInList a owl:Class ;
+	rdfs:subClassOf :PhysicalDocument .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#City
+
+:City a owl:Class ;
+	rdfs:subClassOf :PhysicalLocation .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#CityMap
+
+:CityMap a owl:Class ;
+	rdfs:subClassOf :Map .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#CodeOfConduct
+
+:CodeOfConduct a owl:Class ;
+	rdfs:subClassOf :Policy .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#CoderRole
+
+:CoderRole a owl:Class ;
+	rdfs:subClassOf :DeveloperRole .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#CommercialCompany
+
+:CommercialCompany a owl:Class ;
+	rdfs:subClassOf :OrganizationEntity .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Commit
+
+:Commit a owl:Class ;
+	rdfs:subClassOf :OnlineEvent .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Commitment
+
+:Commitment a owl:Class ;
+	rdfs:subClassOf :Rights .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#CommunicationVenue
+
+:CommunicationVenue a owl:Class ;
+	rdfs:subClassOf :DataResource .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#CommunicationsEvent
+
+:CommunicationsEvent a owl:Class ;
+	rdfs:subClassOf :Event .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Community
+
+:Community a owl:Class ;
+	rdfs:subClassOf :Group .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#CommunityManagerRole
+
+:CommunityManagerRole a owl:Class ;
+	rdfs:subClassOf :Role .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#ComputerMemoryModel
+
+:ComputerMemoryModel a owl:Class ;
+	rdfs:subClassOf :DataModel .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Conference
+
+:Conference a owl:Class ;
+	rdfs:subClassOf :LearningEvent .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#ConferenceTrack
+
+:ConferenceTrack a owl:Class ;
+	rdfs:subClassOf :LearningEvent .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Continent
+
+:Continent a owl:Class ;
+	rdfs:subClassOf :PhysicalLocation .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#ContributorRecruiterRole
+
+:ContributorRecruiterRole a owl:Class ;
+	rdfs:subClassOf :RecruiterRole .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Country
+
+:Country a owl:Class ;
+	rdfs:subClassOf :PhysicalLocation .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#County
+
+:County a owl:Class ;
+	rdfs:subClassOf :PhysicalLocation .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#CreativeCommonsContributorRole
+
+:CreativeCommonsContributorRole a owl:Class ;
+	rdfs:subClassOf :Role .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Current
+
+:Current a owl:Class ;
+	rdfs:subClassOf :EventState .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#DVD
+
+:DVD a owl:Class ;
+	rdfs:subClassOf :Swag .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#DataContributorRole
+
+:DataContributorRole a owl:Class ;
+	rdfs:subClassOf :CreativeCommonsContributorRole .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#DataModel
+
+:DataModel a owl:Class ;
+	rdfs:subClassOf :Model .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#DataResource
+
+:DataResource a owl:Class .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#DatabaseServer
+
+:DatabaseServer a owl:Class ;
+	rdfs:subClassOf :DataResource .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Dataformat
+
+:Dataformat a owl:Class .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Demonstration
+
+:Demonstration a owl:Class ;
+	rdfs:subClassOf :LearningEvent .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Developer
+
+:Developer a owl:Class ;
+	rdfs:subClassOf :Person .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#DeveloperList
+
+:DeveloperList a owl:Class ;
+	rdfs:subClassOf :MailingList .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#DeveloperRole
+
+:DeveloperRole a owl:Class ;
+	rdfs:subClassOf :SoftwareRole .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#DigitalSignature
+
+:DigitalSignature a owl:Class ;
+	rdfs:subClassOf :Certification .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#DirectionSigns
+
+:DirectionSigns a owl:Class ;
+	rdfs:subClassOf :PhysicalDocument .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Disclousure
+
+:Disclousure a owl:Class ;
+	rdfs:subClassOf :Commitment .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#DiscussionThread
+
+:DiscussionThread a owl:Class ;
+	rdfs:subClassOf :DataResource .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Documentation
+
+:Documentation a owl:Class ;
+	rdfs:subClassOf :WebResource .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#DocumentationWriterRole
+
+:DocumentationWriterRole a owl:Class ;
+	rdfs:subClassOf :SoftwareRole .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EducationalDegree
+
+:EducationalDegree a owl:Class ;
+	rdfs:subClassOf :Certification .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EducationalEntity
+
+:EducationalEntity a owl:Class ;
+	rdfs:subClassOf :OrganizationEntity .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Email
+
+:Email a owl:Class ;
+	rdfs:subClassOf :Identifier .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EmailEvent
+
+:EmailEvent a owl:Class ;
+	rdfs:subClassOf :OnlineEvent .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EmailMarketingRole
+
+:EmailMarketingRole a owl:Class ;
+	rdfs:subClassOf :Role .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Event
+
+:Event a owl:Class .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventAttendees
+
+:EventAttendees a owl:Class ;
+	rdfs:subClassOf :Community .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventBriteDataModel
+
+:EventBriteDataModel a owl:Class ;
+	rdfs:subClassOf :WebsiteDataModel .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventManagementRole
+
+:EventManagementRole a owl:Class ;
+	rdfs:subClassOf :Role .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventSchedule
+
+:EventSchedule a owl:Class ;
+	rdfs:subClassOf :Event .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventSeries
+
+:EventSeries a owl:Class ;
+	rdfs:subClassOf :LearningEvent .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventState
+
+:EventState a owl:Class ;
+	rdfs:subClassOf :EventStateModel .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#EventStateModel
+
+:EventStateModel a owl:Class ;
+	rdfs:subClassOf :StateModel .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#FacebookDataModel
+
+:FacebookDataModel a owl:Class ;
+	rdfs:subClassOf :WebsiteDataModel .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#FacebookPage
+
+:FacebookPage a owl:Class ;
+	rdfs:subClassOf :Webpage .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#FacebookPost
+
+:FacebookPost a owl:Class ;
+	rdfs:subClassOf :OnlineEvent .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#FacebookResource
+
+:FacebookResource a owl:Class ;
+	rdfs:subClassOf :Website .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#FamilyName
+
+:FamilyName a owl:Class ;
+	rdfs:subClassOf :Name .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Firewall
+
+:Firewall a owl:Class ;
+	rdfs:subClassOf :DataResource .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Floor
+
+:Floor a owl:Class ;
+	rdfs:subClassOf :PhysicalLocation .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#FloorPlan
+
+:FloorPlan a owl:Class ;
+	rdfs:subClassOf :Map .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#ForumPost
+
+:ForumPost a owl:Class ;
+	rdfs:subClassOf :OnlineEvent .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#ForumThread
+
+:ForumThread a owl:Class ;
+	rdfs:subClassOf :DiscussionThread .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#FourSquarePage
+
+:FourSquarePage a owl:Class ;
+	rdfs:subClassOf :Webpage .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#FreeAndOpenSourcePolicy
+
+:FreeAndOpenSourcePolicy a owl:Class ;
+	rdfs:subClassOf :Policy .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#FreeSoftwareProject
+
+:FreeSoftwareProject a owl:Class ;
+	rdfs:subClassOf :NonProfitOrganization .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#FundingReviewRole
+
+:FundingReviewRole a owl:Class ;
+	rdfs:subClassOf :FundraisingRole .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#FundraisingRole
+
+:FundraisingRole a owl:Class ;
+	rdfs:subClassOf :Role .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#GitRepository
+
+:GitRepository a owl:Class ;
+	rdfs:subClassOf :SoftwareRepository .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#GooglePlusPage
+
+:GooglePlusPage a owl:Class ;
+	rdfs:subClassOf :Webpage .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#GovernmentAgency
+
+:GovernmentAgency a owl:Class ;
+	rdfs:subClassOf :OrganizationEntity .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Group
+
+:Group a owl:Class ;
+	rdfs:subClassOf :Agent .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#GroupMembershipRole
+
+:GroupMembershipRole a owl:Class ;
+	rdfs:subClassOf :Role .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#HTMLDataModel
+
+:HTMLDataModel a owl:Class ;
+	rdfs:subClassOf :DataModel .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Hallway
+
+:Hallway a owl:Class ;
+	rdfs:subClassOf :PhysicalLocation .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Handbook
+
+:Handbook a owl:Class ;
+	rdfs:subClassOf :Book .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Hostel
+
+:Hostel a owl:Class ;
+	rdfs:subClassOf :Building .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Hotel
+
+:Hotel a owl:Class ;
+	rdfs:subClassOf :Building .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#House
+
+:House a owl:Class ;
+	rdfs:subClassOf :Building .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#IRCChannel
+
+:IRCChannel a owl:Class ;
+	rdfs:subClassOf :CommunicationVenue .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Identifier
+
+:Identifier a owl:Class ;
+	rdfs:subClassOf :Symbol .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Image
+
+:Image a owl:Class ;
+	rdfs:subClassOf :Media .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#InConflict
+
+:InConflict a owl:Class ;
+	rdfs:subClassOf :EventState .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#InPreparation
+
+:InPreparation a owl:Class ;
+	rdfs:subClassOf :EventState .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#InteropereableDataFormat
+
+:InteropereableDataFormat a owl:Class ;
+	rdfs:subClassOf :Dataformat .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Invoice
+
+:Invoice a owl:Class ;
+	rdfs:subClassOf :Payment .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#InvoiceItem
+
+:InvoiceItem a owl:Class ;
+	rdfs:subClassOf :Invoice .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#IssueTracker
+
+:IssueTracker a owl:Class ;
+	rdfs:subClassOf :WebResource .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#JSONDataModel
+
+:JSONDataModel a owl:Class ;
+	rdfs:subClassOf :DataModel .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#JavaScriptCodingRole
+
+:JavaScriptCodingRole a owl:Class ;
+	rdfs:subClassOf :CoderRole .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#KnowledgeContributorRole
+
+:KnowledgeContributorRole a owl:Class ;
+	rdfs:subClassOf :CreativeCommonsContributorRole .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#LabelingEvent
+
+:LabelingEvent a owl:Class ;
+	rdfs:subClassOf :Commit .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Law
+
+:Law a owl:Class ;
+	rdfs:subClassOf :Commitment .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#LearningEvent
+
+:LearningEvent a owl:Class ;
+	rdfs:subClassOf :OfflineEvent .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#LegalEntity
+
+:LegalEntity a owl:Class ;
+	rdfs:subClassOf :Agent .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#License
+
+:License a owl:Class ;
+	rdfs:subClassOf :Rights .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#LogisticsRole
+
+:LogisticsRole a owl:Class ;
+	rdfs:subClassOf :Role .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#MailingList
+
+:MailingList a owl:Class ;
+	rdfs:subClassOf :DataResource .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#MailingListEvent
+
+:MailingListEvent a owl:Class ;
+	rdfs:subClassOf :OnlineEvent .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#MailingListThread
+
+:MailingListThread a owl:Class ;
+	rdfs:subClassOf :DiscussionThread .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Makerspace
+
+:Makerspace a owl:Class ;
+	rdfs:subClassOf :OrganizationEntity .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Map
+
+:Map a owl:Class ;
+	rdfs:subClassOf :PhysicalDocument .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#MarkdownModel
+
+:MarkdownModel a owl:Class ;
+	rdfs:subClassOf :DataModel .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#MarketingAgency
+
+:MarketingAgency a owl:Class ;
+	rdfs:subClassOf :CommercialCompany .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#MatrixRoom
+
+:MatrixRoom a owl:Class ;
+	rdfs:subClassOf :CommunicationVenue .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Media
+
+:Media a owl:Class ;
+	rdfs:subClassOf :WebResource .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#MediaWikiPage
+
+:MediaWikiPage a owl:Class ;
+	rdfs:subClassOf :WikiPage .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#MembershipDataDocument
+
+:MembershipDataDocument a owl:Class ;
+	rdfs:subClassOf :DataResource .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#MembershipJoinEvent
+
+:MembershipJoinEvent a owl:Class ;
+	rdfs:subClassOf :CommunicationsEvent .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#MembershipRecruiterRole
+
+:MembershipRecruiterRole a owl:Class ;
+	rdfs:subClassOf :RecruiterRole .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#MentalResource
+
+:MentalResource a owl:Class .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Merchandise
+
+:Merchandise a owl:Class ;
+	rdfs:subClassOf :PhysicalThing .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#MercurialRepository
+
+:MercurialRepository a owl:Class ;
+	rdfs:subClassOf :SoftwareRepository .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#MetaDataContributorRole
+
+:MetaDataContributorRole a owl:Class ;
+	rdfs:subClassOf :DataContributorRole .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Model
+
+:Model a owl:Class .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#ModellingActivity
+
+:ModellingActivity a owl:Class ;
+	rdfs:subClassOf :Activity .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Name
+
+:Name a owl:Class ;
+	rdfs:subClassOf :Identifier .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Neighbourhood
+
+:Neighbourhood a owl:Class ;
+	rdfs:subClassOf :PhysicalLocation .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#NonProfitOrganization
+
+:NonProfitOrganization a owl:Class ;
+	rdfs:subClassOf :OrganizationEntity .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#OAuth
+
+:OAuth a owl:Class ;
+	rdfs:subClassOf :Authentification .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#OWLModel
+
+:OWLModel a owl:Class ;
+	rdfs:subClassOf :XMLDataModel .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Offer
+
+:Offer a owl:Class ;
+	rdfs:subClassOf :Rights .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#OfflineEvent
+
+:OfflineEvent a owl:Class ;
+	rdfs:subClassOf :Event .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#OnlineEvent
+
+:OnlineEvent a owl:Class ;
+	rdfs:subClassOf :Event .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#OpenDataFormat
+
+:OpenDataFormat a owl:Class ;
+	rdfs:subClassOf :Dataformat .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#OpenDataPolicy
+
+:OpenDataPolicy a owl:Class ;
+	rdfs:subClassOf :Policy .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#OpenId
+
+:OpenId a owl:Class ;
+	rdfs:subClassOf :Identifier .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#OpenStreetmapNode
+
+:OpenStreetmapNode a owl:Class ;
+	rdfs:subClassOf :Webpage .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#OrganizationEntity
+
+:OrganizationEntity a owl:Class ;
+	rdfs:subClassOf :LegalEntity .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Past
+
+:Past a owl:Class ;
+	rdfs:subClassOf :EventState .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Path
+
+:Path a owl:Class ;
+	rdfs:subClassOf :PhysicalLocation .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Payment
+
+:Payment a owl:Class ;
+	rdfs:subClassOf :Rights .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Person
+
+:Person a owl:Class ;
+	rdfs:subClassOf :LegalEntity .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#PhysicalDocument
+
+:PhysicalDocument a owl:Class ;
+	rdfs:subClassOf :PhysicalThing .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#PhysicalLocation
+
+:PhysicalLocation a owl:Class .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#PhysicalThing
+
+:PhysicalThing a owl:Class .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#PictureContributorRole
+
+:PictureContributorRole a owl:Class ;
+	rdfs:subClassOf :CreativeCommonsContributorRole .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Planned
+
+:Planned a owl:Class ;
+	rdfs:subClassOf :EventState .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Point
+
+:Point a owl:Class ;
+	rdfs:subClassOf :PhysicalLocation .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Policy
+
+:Policy a owl:Class ;
+	rdfs:subClassOf :Commitment .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#PolicyMakingRole
+
+:PolicyMakingRole a owl:Class ;
+	rdfs:subClassOf :Role .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Poster
+
+:Poster a owl:Class ;
+	rdfs:subClassOf :Swag .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#PrintedBanner
+
+:PrintedBanner a owl:Class ;
+	rdfs:subClassOf :Swag .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#PrintedTicket
+
+:PrintedTicket a owl:Class ;
+	rdfs:subClassOf :PhysicalDocument .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Process
+
+:Process a owl:Class ;
+	rdfs:subClassOf :Event .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#ProductAwareness
+
+:ProductAwareness a owl:Class ;
+	rdfs:subClassOf :MentalResource .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#ProductCategory
+
+:ProductCategory a owl:Class ;
+	rdfs:subClassOf :DataModel .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#ProjectEvent
+
+:ProjectEvent a owl:Class ;
+	rdfs:subClassOf :OfflineEvent .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#ProjectMeeting
+
+:ProjectMeeting a owl:Class ;
+	rdfs:subClassOf :ProjectEvent .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Proposed
+
+:Proposed a owl:Class ;
+	rdfs:subClassOf :EventState .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#RecruiterCompany
+
+:RecruiterCompany a owl:Class ;
+	rdfs:subClassOf :CommercialCompany .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#RecruiterRole
+
+:RecruiterRole a owl:Class ;
+	rdfs:subClassOf :Role .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#RegistrationPeriod
+
+:RegistrationPeriod a owl:Class ;
+	rdfs:subClassOf :CommunicationsEvent .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#ReleaseSystem
+
+:ReleaseSystem a owl:Class ;
+	rdfs:subClassOf :WebResource .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Rights
+
+:Rights a owl:Class ;
+	rdfs:subClassOf :AbstractDocument .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Role
+
+:Role a owl:Class .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Room
+
+:Room a owl:Class ;
+	rdfs:subClassOf :PhysicalLocation .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#SQLDataModel
+
+:SQLDataModel a owl:Class ;
+	rdfs:subClassOf :DataModel .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#ScheduledTask
+
+:ScheduledTask a owl:Class ;
+	rdfs:subClassOf :Task .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#School
+
+:School a owl:Class ;
+	rdfs:subClassOf :EducationalEntity .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#SchoolDirectorRole
+
+:SchoolDirectorRole a owl:Class ;
+	rdfs:subClassOf :Role .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#SchoolTeacherRole
+
+:SchoolTeacherRole a owl:Class ;
+	rdfs:subClassOf :Role .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#SearchActivity
+
+:SearchActivity a owl:Class ;
+	rdfs:subClassOf :Activity .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#SelectionActivity
+
+:SelectionActivity a owl:Class ;
+	rdfs:subClassOf :Activity .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#SkillsManagerRole
+
+:SkillsManagerRole a owl:Class ;
+	rdfs:subClassOf :Role .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#SkillsTestEvent
+
+:SkillsTestEvent a owl:Class ;
+	rdfs:subClassOf :Event .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#SlackChannel
+
+:SlackChannel a owl:Class ;
+	rdfs:subClassOf :CommunicationVenue .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Society
+
+:Society a owl:Class ;
+	rdfs:subClassOf :Group .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#SoftwareCompany
+
+:SoftwareCompany a owl:Class ;
+	rdfs:subClassOf :CommercialCompany .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#SoftwareRepository
+
+:SoftwareRepository a owl:Class ;
+	rdfs:subClassOf :DataResource .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#SoftwareRole
+
+:SoftwareRole a owl:Class ;
+	rdfs:subClassOf :Role .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#SoftwareTestingRole
+
+:SoftwareTestingRole a owl:Class ;
+	rdfs:subClassOf :SoftwareRole .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#SpeakerAssistantRole
+
+:SpeakerAssistantRole a owl:Class ;
+	rdfs:subClassOf :VolunteerRole .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#SpeakerRole
+
+:SpeakerRole a owl:Class ;
+	rdfs:subClassOf :Role .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#SponsoringRole
+
+:SponsoringRole a owl:Class ;
+	rdfs:subClassOf :Role .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#StandardDataFormat
+
+:StandardDataFormat a owl:Class ;
+	rdfs:subClassOf :Dataformat .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#State
+
+:State a owl:Class ;
+	rdfs:subClassOf :PhysicalLocation .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#StateModel
+
+:StateModel a owl:Class ;
+	rdfs:subClassOf :UMLModel .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Statutes
+
+:Statutes a owl:Class ;
+	rdfs:subClassOf :Commitment .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Stickers
+
+:Stickers a owl:Class ;
+	rdfs:subClassOf :Swag .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Student
+
+:Student a owl:Class ;
+	rdfs:subClassOf :Person .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#StudentRole
+
+:StudentRole a owl:Class ;
+	rdfs:subClassOf :Role .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#SubversionRepository
+
+:SubversionRepository a owl:Class ;
+	rdfs:subClassOf :SoftwareRepository .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Supported
+
+:Supported a owl:Class ;
+	rdfs:subClassOf :EventState .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Swag
+
+:Swag a owl:Class ;
+	rdfs:subClassOf :Merchandise .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Symbol
+
+:Symbol a owl:Class ;
+	rdfs:subClassOf :AbstractDocument .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Talk
+
+:Talk a owl:Class ;
+	rdfs:subClassOf :LearningEvent ;
+	rdfs:label "Lecture"@en , "Talk"@en .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#TalkCommentEvent
+
+:TalkCommentEvent a owl:Class ;
+	rdfs:subClassOf :TalkEvent .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#TalkEvent
+
+:TalkEvent a owl:Class ;
+	rdfs:subClassOf :OnlineEvent .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#TalkSubmissionEvent
+
+:TalkSubmissionEvent a owl:Class ;
+	rdfs:subClassOf :TalkEvent .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Task
+
+:Task a owl:Class ;
+	rdfs:subClassOf :Process .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#TaxiCompany
+
+:TaxiCompany a owl:Class ;
+	rdfs:subClassOf :TransportationAgency .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Teeshirt
+
+:Teeshirt a owl:Class ;
+	rdfs:subClassOf :Swag .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#TelegramChannel
+
+:TelegramChannel a owl:Class ;
+	rdfs:subClassOf :CommunicationVenue .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#TimeZone
+
+:TimeZone a owl:Class ;
+	rdfs:subClassOf :PhysicalLocation .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#TopicName
+
+:TopicName a owl:Class ;
+	rdfs:subClassOf :Identifier .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#TrackerItemThread
+
+:TrackerItemThread a owl:Class ;
+	rdfs:subClassOf :DiscussionThread .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Trademark
+
+:Trademark a owl:Class ;
+	rdfs:subClassOf :Rights .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Train
+
+:Train a owl:Class ;
+	rdfs:subClassOf :Vehicle .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#TrainCompany
+
+:TrainCompany a owl:Class ;
+	rdfs:subClassOf :TransportationAgency .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#TrainerRole
+
+:TrainerRole a owl:Class ;
+	rdfs:subClassOf :Role .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#TransportationAgency
+
+:TransportationAgency a owl:Class ;
+	rdfs:subClassOf :CommercialCompany .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Tutorial
+
+:Tutorial a owl:Class ;
+	rdfs:subClassOf :Workshop .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Tweet
+
+:Tweet a owl:Class ;
+	rdfs:subClassOf :OnlineEvent .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#TwitterDataModel
+
+:TwitterDataModel a owl:Class ;
+	rdfs:subClassOf :WebsiteDataModel .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#TwitterHandle
+
+:TwitterHandle a owl:Class ;
+	rdfs:subClassOf :Identifier .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#TwitterProfilePage
+
+:TwitterProfilePage a owl:Class ;
+	rdfs:subClassOf :Webpage .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#TwitterThread
+
+:TwitterThread a owl:Class ;
+	rdfs:subClassOf :DiscussionThread .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#UMLModel
+
+:UMLModel a owl:Class ;
+	rdfs:subClassOf :DataModel .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#URL
+
+:URL a owl:Class ;
+	rdfs:subClassOf :Identifier .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#UserInterface
+
+:UserInterface a owl:Class .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#UserRole
+
+:UserRole a owl:Class ;
+	rdfs:subClassOf :SoftwareRole .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Vehicle
+
+:Vehicle a owl:Class ;
+	rdfs:subClassOf :PhysicalThing .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#VersionLabel
+
+:VersionLabel a owl:Class ;
+	rdfs:subClassOf :Identifier .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Video
+
+:Video a owl:Class ;
+	rdfs:subClassOf :Media .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#VolunteerRole
+
+:VolunteerRole a owl:Class ;
+	rdfs:subClassOf :Role .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#VotingEvent
+
+:VotingEvent a owl:Class ;
+	rdfs:subClassOf :Event .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#WebBanner
+
+:WebBanner a owl:Class ;
+	rdfs:subClassOf :Image .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#WebClient
+
+:WebClient a owl:Class ;
+	rdfs:subClassOf :DataResource .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#WebQualityOfService
+
+:WebQualityOfService a owl:Class ;
+	rdfs:subClassOf :DataResource .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#WebResource
+
+:WebResource a owl:Class ;
+	rdfs:subClassOf :DataResource .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#WebUserThrottle
+
+:WebUserThrottle a owl:Class ;
+	rdfs:subClassOf :WebQualityOfService .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Webpage
+
+:Webpage a owl:Class ;
+	rdfs:subClassOf :WebResource .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Webserver
+
+:Webserver a owl:Class ;
+	rdfs:subClassOf :WebResource .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Website
+
+:Website a owl:Class ;
+	rdfs:subClassOf :WebResource .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#WebsiteDataModel
+
+:WebsiteDataModel a owl:Class ;
+	rdfs:subClassOf :DataModel .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#WikiPage
+
+:WikiPage a owl:Class ;
+	rdfs:subClassOf :Webpage .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#WikiSystem
+
+:WikiSystem a owl:Class ;
+	rdfs:subClassOf :Website .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#WikidataPage
+
+:WikidataPage a owl:Class ;
+	rdfs:subClassOf :WikipediaPage .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#WikipediaPage
+
+:WikipediaPage a owl:Class ;
+	rdfs:subClassOf :MediaWikiPage .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Workshop
+
+:Workshop a owl:Class ;
+	rdfs:subClassOf :LearningEvent .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#XMLDataModel
+
+:XMLDataModel a owl:Class ;
+	rdfs:subClassOf :DataModel .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#YAMLModel
+
+:YAMLModel a owl:Class ;
+	rdfs:subClassOf :DataModel .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#YelpPage
+
+:YelpPage a owl:Class ;
+	rdfs:subClassOf :Webpage .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Document_Foundation
+
+:Document_Foundation a owl:NamedIndividual .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Fedora_Project
+
+:Fedora_Project a owl:NamedIndividual .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Mozilla
+
+:Mozilla a owl:NamedIndividual .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#OpenStreetmap
+
+:OpenStreetmap a owl:NamedIndividual .
+# 
+# http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#Wikipedia
+
+:Wikipedia a owl:NamedIndividual .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+
+_:genid1 a owl:AllDisjointClasses ;
+	owl:members _:genid6 .
+
+_:genid6 a rdf:List ;
+	rdf:first :BrowseActivity ;
+	rdf:rest _:genid5 .
+
+_:genid5 a rdf:List ;
+	rdf:first :CategorizationActivity ;
+	rdf:rest _:genid4 .
+
+_:genid4 a rdf:List ;
+	rdf:first :ModellingActivity ;
+	rdf:rest _:genid3 .
+
+_:genid3 a rdf:List ;
+	rdf:first :SearchActivity ;
+	rdf:rest _:genid2 .
+
+_:genid2 a rdf:List ;
+	rdf:first :SelectionActivity ;
+	rdf:rest rdf:nil .
+# 
+# Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi
